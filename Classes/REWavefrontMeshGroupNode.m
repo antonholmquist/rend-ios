@@ -24,34 +24,45 @@
  * THE SOFTWARE.
  */
 
+#import "REWavefrontMeshGroupNode.h"
+#import "REWavefrontMesh.h"
 
-#import <Foundation/Foundation.h>
+@implementation REWavefrontMeshGroupNode
 
-@class REWavefrontMesh, RETexture, RETexture2D, RETextureCubeMap;
+@synthesize texture, group, elementSet;
+@synthesize nextFrameTween, nextFramePosition, nextFrameRotation;
 
-@interface REMeshCache : NSObject
-
-+ (REWavefrontMesh*)meshNamed:(NSString*)filename; // Will cause the mesh to load into memory. Supports both .obj and .reobj.
-
-@end
-
-@interface RETextureCache : NSObject
-
-+ (RETexture2D*)textureNamed:(NSString*)filename;
-+ (RETextureCubeMap*)cubeTextureNamed:(NSString*)filename;
-
-@end
-
-@class REProgram;
-
-@interface REProgramCache : NSObject {
-    NSMutableDictionary *dictionary;
+- (id)initWithWavefrontMesh:(REWavefrontMesh*)m group:(NSString*)g {
+    if ((self = [super init])) {
+        wavefrontMesh = [m retain];
+        group = [g retain];
+        
+        elementSet = [wavefrontMesh elementsForGroup:group];
+        
+        self.boundingBox = elementSet.boundingBox;
+        
+        // Set anchor coordinate to center
+        self.anchorCoordinate = CC3BoundingBoxCenter(self.boundingBox);
+        self.position = self.anchorCoordinate;
+        
+    } return self;
 }
 
-+ (REProgramCache*)sharedCache;
+- (void)dealloc {
+    elementSet = nil;
+    [wavefrontMesh release];
+    [group release];
+    [texture release];
+    [super dealloc];
+}
 
-- (REProgram*)programForKey:(id)key;
-- (void)setProgram:(REProgram*)program forKey:(id)key;
++ (REProgram*)program {
+    return [REProgram programWithVertexFilename:@"sREWavefrontMeshGroup.vsh" fragmentFilename:@"sREWavefrontMeshGroup.fsh"];
+}
 
+
+- (void)draw {
+
+}
 
 @end

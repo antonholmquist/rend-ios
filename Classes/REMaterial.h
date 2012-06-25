@@ -23,35 +23,21 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-
-
 #import <Foundation/Foundation.h>
 
-@class REWavefrontMesh, RETexture, RETexture2D, RETextureCubeMap;
-
-@interface REMeshCache : NSObject
-
-+ (REWavefrontMesh*)meshNamed:(NSString*)filename; // Will cause the mesh to load into memory. Supports both .obj and .reobj.
-
-@end
-
-@interface RETextureCache : NSObject
-
-+ (RETexture2D*)textureNamed:(NSString*)filename;
-+ (RETextureCubeMap*)cubeTextureNamed:(NSString*)filename;
-
-@end
-
-@class REProgram;
-
-@interface REProgramCache : NSObject {
-    NSMutableDictionary *dictionary;
+@interface REMaterial : NSObject {
+    CC3Vector4 ambient_;
+    CC3Vector4 diffuse_;
+    CC3Vector4 specular_;
+    float shininess_;
 }
 
-+ (REProgramCache*)sharedCache;
+@property (nonatomic, assign) CC3Vector4 ambient;
+@property (nonatomic, assign) CC3Vector4 diffuse;
+@property (nonatomic, assign) CC3Vector4 specular;
+@property (nonatomic, assign) float shininess;
 
-- (REProgram*)programForKey:(id)key;
-- (void)setProgram:(REProgram*)program forKey:(id)key;
-
++ (id)material;
++ (id)materialWithAmbient:(float)ambient diffuse:(float)diffuse specular:(float)specular shininess:(float)shininess;
 
 @end

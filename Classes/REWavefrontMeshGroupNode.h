@@ -24,34 +24,37 @@
  * THE SOFTWARE.
  */
 
+#import "RENode.h"
 
-#import <Foundation/Foundation.h>
+@class REWavefrontMesh, REWavefrontElementSet;
+@class RETexture2D;
 
-@class REWavefrontMesh, RETexture, RETexture2D, RETextureCubeMap;
+/* REWavefrontMeshGroupNode
+ 
+ Since everything in a mesh is contained within subgroups.
+ 
+ It's the groups that are actually drawn.
+ 
+ */
 
-@interface REMeshCache : NSObject
-
-+ (REWavefrontMesh*)meshNamed:(NSString*)filename; // Will cause the mesh to load into memory. Supports both .obj and .reobj.
-
-@end
-
-@interface RETextureCache : NSObject
-
-+ (RETexture2D*)textureNamed:(NSString*)filename;
-+ (RETextureCubeMap*)cubeTextureNamed:(NSString*)filename;
-
-@end
-
-@class REProgram;
-
-@interface REProgramCache : NSObject {
-    NSMutableDictionary *dictionary;
+@interface REWavefrontMeshGroupNode : RENode {
+    
+    REWavefrontMesh *wavefrontMesh;
+    NSString *group;
+    REWavefrontElementSet *elementSet; // The indices for this node
+        
+    RETexture2D *texture;
 }
 
-+ (REProgramCache*)sharedCache;
+@property (nonatomic, readonly) NSString *group;
+@property (nonatomic, readonly) REWavefrontElementSet *elementSet;
 
-- (REProgram*)programForKey:(id)key;
-- (void)setProgram:(REProgram*)program forKey:(id)key;
+@property (nonatomic, assign) float nextFrameTween;
+@property (nonatomic, assign) CC3Vector nextFramePosition;
+@property (nonatomic, assign) CC3Vector4 nextFrameRotation;
 
+@property (nonatomic, retain) RETexture2D *texture;
+
+- (id)initWithWavefrontMesh:(REWavefrontMesh*)m group:(NSString*)g;
 
 @end

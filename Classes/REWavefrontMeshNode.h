@@ -24,34 +24,39 @@
  * THE SOFTWARE.
  */
 
+#import "RENode.h"
 
-#import <Foundation/Foundation.h>
 
-@class REWavefrontMesh, RETexture, RETexture2D, RETextureCubeMap;
+@class REWavefrontMesh;
+@class RETexture2D;
+@class REVertexArrayObject;
 
-@interface REMeshCache : NSObject
+/* Contains texture
+ 
+ Doesn't draw anything itself. Needs group node to draw
+ 
+ NOTE: Each vertex attribute must belong to specific group in single batch for this to work. Else, we need to take duplicates into account, which may be costly and should maybe be precalculated.
+ 
+ */
 
-+ (REWavefrontMesh*)meshNamed:(NSString*)filename; // Will cause the mesh to load into memory. Supports both .obj and .reobj.
+@interface REWavefrontMeshNode : RENode {
+    REWavefrontMesh *wavefrontMesh;
+    
+    NSMutableDictionary *groupNodes; // Key: groupname, value: REWavefrontMeshSubgroupNode
 
-@end
-
-@interface RETextureCache : NSObject
-
-+ (RETexture2D*)textureNamed:(NSString*)filename;
-+ (RETextureCubeMap*)cubeTextureNamed:(NSString*)filename;
-
-@end
-
-@class REProgram;
-
-@interface REProgramCache : NSObject {
-    NSMutableDictionary *dictionary;
+    RETexture2D *texture;
+    
+    NSMutableArray *indexBatches; // Index: batch index
+    
+    //REVertexArrayObject *vertexArrayObject;
+    NSMutableArray *vertexArrayObjects; // Index: batch index
 }
 
-+ (REProgramCache*)sharedCache;
+@property (nonatomic, readonly) REWavefrontMesh *wavefrontMesh;
+@property (nonatomic, readonly) NSDictionary *groupNodes;
+@property (nonatomic, retain) RETexture2D *texture;
 
-- (REProgram*)programForKey:(id)key;
-- (void)setProgram:(REProgram*)program forKey:(id)key;
+- (id)initWithWavefrontMesh:(REWavefrontMesh*)m;
 
 
 @end

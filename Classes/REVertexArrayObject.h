@@ -24,34 +24,13 @@
  * THE SOFTWARE.
  */
 
-
 #import <Foundation/Foundation.h>
 
-@class REWavefrontMesh, RETexture, RETexture2D, RETextureCubeMap;
-
-@interface REMeshCache : NSObject
-
-+ (REWavefrontMesh*)meshNamed:(NSString*)filename; // Will cause the mesh to load into memory. Supports both .obj and .reobj.
-
-@end
-
-@interface RETextureCache : NSObject
-
-+ (RETexture2D*)textureNamed:(NSString*)filename;
-+ (RETextureCubeMap*)cubeTextureNamed:(NSString*)filename;
-
-@end
-
-@class REProgram;
-
-@interface REProgramCache : NSObject {
-    NSMutableDictionary *dictionary;
+@interface REVertexArrayObject : NSObject {
+    GLuint vertexArrayObject;
 }
 
-+ (REProgramCache*)sharedCache;
-
-- (REProgram*)programForKey:(id)key;
-- (void)setProgram:(REProgram*)program forKey:(id)key;
-
+- (void)bind;
++ (void)unbind;
 
 @end

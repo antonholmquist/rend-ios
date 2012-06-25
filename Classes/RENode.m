@@ -34,6 +34,7 @@
 #import "RENSArrayAdditions.h"
 #import "RENSValueAdditions.h"
 #import "NSValue+CC3Types.h"
+#import "REWorld.h"
 
 @interface RENode ()
 

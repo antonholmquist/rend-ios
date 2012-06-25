@@ -24,34 +24,37 @@
  * THE SOFTWARE.
  */
 
+#import "REMaterial.h"
 
-#import <Foundation/Foundation.h>
+@implementation REMaterial
 
-@class REWavefrontMesh, RETexture, RETexture2D, RETextureCubeMap;
+@synthesize ambient = ambient_;
+@synthesize diffuse = diffuse_;
+@synthesize specular = specular_;
+@synthesize shininess = shininess_;
 
-@interface REMeshCache : NSObject
-
-+ (REWavefrontMesh*)meshNamed:(NSString*)filename; // Will cause the mesh to load into memory. Supports both .obj and .reobj.
-
-@end
-
-@interface RETextureCache : NSObject
-
-+ (RETexture2D*)textureNamed:(NSString*)filename;
-+ (RETextureCubeMap*)cubeTextureNamed:(NSString*)filename;
-
-@end
-
-@class REProgram;
-
-@interface REProgramCache : NSObject {
-    NSMutableDictionary *dictionary;
++ (id)material {
+    return [[[[self class] alloc] init] autorelease];
 }
 
-+ (REProgramCache*)sharedCache;
++ (id)materialWithAmbient:(float)ambient diffuse:(float)diffuse specular:(float)specular shininess:(float)shininess {
+    REMaterial *instance = [self material];
+    
+    instance.ambient = CC3Vector4Make(ambient, ambient, ambient, 1);
+    instance.diffuse = CC3Vector4Make(diffuse, diffuse, diffuse, 1);
+    instance.specular = CC3Vector4Make(specular, specular, specular, 1);
+    instance.shininess = shininess;
+    
+    return instance;
+}
 
-- (REProgram*)programForKey:(id)key;
-- (void)setProgram:(REProgram*)program forKey:(id)key;
-
+- (id)init {
+    if ((self = [super init])) {
+        ambient_ = CC3Vector4Make(1, 1, 1, 1);
+        diffuse_ = CC3Vector4Make(1, 1, 1, 1);
+        specular_ = CC3Vector4Make(1, 1, 1, 1);
+        shininess_ = 1;
+    } return self;
+}
 
 @end

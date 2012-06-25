@@ -25,8 +25,42 @@
  */
 
 #import "RECache.h"
-#import "RETexture2D.h"
+#import "RETexture.h"
+#import "REWavefrontMesh.h"
 
+
+
+@implementation REMeshCache
+
++ (REWavefrontMesh*)meshNamed:(NSString*)filename {
+    
+    REWavefrontMesh *mesh = nil;
+    
+    static NSMutableDictionary *meshLoaderMeshes = nil;
+    if (!meshLoaderMeshes) meshLoaderMeshes = [[NSMutableDictionary alloc] init];
+    
+    mesh = [meshLoaderMeshes objectForKey:filename];
+    
+    if (!mesh) {
+        if ([[filename pathExtension] isEqual:@"obj"]) {
+            mesh = [[[REWavefrontMesh alloc] initWithMeshNamed:filename] autorelease];
+            //NSAssert(YES, @"MeshCache: You shouldn't use this for .obj files. Convert them to .reobj first!");
+        } else if ([[filename pathExtension] isEqual:@"reobj"]) {
+            NSData *data = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:filename ofType:nil]];
+            mesh = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+        }
+        
+        [mesh createBuffers];
+        
+        //NSAssert(mesh, @"MeshLoader: Can't load mesh: %@", filename);
+        
+        [meshLoaderMeshes setObject:mesh forKey:filename];
+    }
+    
+    return mesh;
+}
+
+@end
 
 @implementation RETextureCache
 

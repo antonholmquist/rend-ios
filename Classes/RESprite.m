@@ -27,7 +27,7 @@
 #import "RESprite.h"
 #import "REBuffer.h"
 #import "RECache.h"
-#import "RETexture2D.h"
+#import "RETexture.h"
 
 @interface RESprite ()
 

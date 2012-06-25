@@ -25,33 +25,39 @@
  */
 
 
-#import <Foundation/Foundation.h>
 
-@class REWavefrontMesh, RETexture, RETexture2D, RETextureCubeMap;
+/* REWavefrontMeshElementIndexBatch
+ *
+ * The purpose of this object is combine element indices from multiple sets, so we can pass it in single draw call.
+ * (And create buffers)
+ */
 
-@interface REMeshCache : NSObject
+@class REBuffer;
 
-+ (REWavefrontMesh*)meshNamed:(NSString*)filename; // Will cause the mesh to load into memory. Supports both .obj and .reobj.
-
-@end
-
-@interface RETextureCache : NSObject
-
-+ (RETexture2D*)textureNamed:(NSString*)filename;
-+ (RETextureCubeMap*)cubeTextureNamed:(NSString*)filename;
-
-@end
-
-@class REProgram;
-
-@interface REProgramCache : NSObject {
-    NSMutableDictionary *dictionary;
+@interface REWavefrontMeshElementIndexBatch : NSObject {
+    GLushort *indices;
+    int length;
+    int numberOfAttributes;
+    
+    GLfloat *batchIndexAttributes; // Contains the batch index for each element indec
+    
+    REBuffer *elementIndexBuffer;
+    REBuffer *batchIndexAttributeBuffer;
 }
 
-+ (REProgramCache*)sharedCache;
+@property (nonatomic, readonly) GLushort *indices; // The batched indices
+@property (nonatomic, readonly) int length;
+@property (nonatomic, readonly) int numberOfAttributes;
+@property (nonatomic, readonly) GLfloat *batchIndexAttributes;
 
-- (REProgram*)programForKey:(id)key;
-- (void)setProgram:(REProgram*)program forKey:(id)key;
+- (id)initWithElementSets:(NSArray*)elementSets indices:(GLushort*)rawIndices;
 
+- (BOOL)hasElementIndexBuffer;
+- (void)createElementIndexBuffer;
+- (void)bindElementIndexBuffer;
+
+- (BOOL)hasBatchIndexAttributeBuffer;
+- (void)createBatchIndexAttributeBuffer;
+- (void)bindBatchIndexAttributeBuffer;
 
 @end

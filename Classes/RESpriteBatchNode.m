@@ -28,7 +28,8 @@
 #import "RENSArrayAdditions.h"
 #import "REGLStateManager.h"
 #import "RECamera.h"
-#import "RETexture2D.h"
+#import "RETexture.h"
+#import "REBuffer.h"
 
 #define kRESpriteBatchNodeBatchSize 24
 

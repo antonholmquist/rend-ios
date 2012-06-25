@@ -24,34 +24,32 @@
  * THE SOFTWARE.
  */
 
+#import "REVertexArrayObject.h"
+#import "REGLStateManager.h"
 
-#import <Foundation/Foundation.h>
+@implementation REVertexArrayObject
 
-@class REWavefrontMesh, RETexture, RETexture2D, RETextureCubeMap;
-
-@interface REMeshCache : NSObject
-
-+ (REWavefrontMesh*)meshNamed:(NSString*)filename; // Will cause the mesh to load into memory. Supports both .obj and .reobj.
-
-@end
-
-@interface RETextureCache : NSObject
-
-+ (RETexture2D*)textureNamed:(NSString*)filename;
-+ (RETextureCubeMap*)cubeTextureNamed:(NSString*)filename;
-
-@end
-
-@class REProgram;
-
-@interface REProgramCache : NSObject {
-    NSMutableDictionary *dictionary;
+- (id)init {
+    if ((self = [super init])) {
+        glGenVertexArraysOES(1, &vertexArrayObject);
+    } return self;
 }
 
-+ (REProgramCache*)sharedCache;
+- (void)dealloc {
+    // Unbind if bound, for safety
+    if ([[REGLStateManager sharedManager] vertexArrayObjectBinding] == vertexArrayObject) {
+        [[self class] unbind];
+    }
+    glDeleteVertexArraysOES(1, &vertexArrayObject);
+    [super dealloc];
+}
 
-- (REProgram*)programForKey:(id)key;
-- (void)setProgram:(REProgram*)program forKey:(id)key;
+- (void)bind {
+    [[REGLStateManager sharedManager] setVertexArrayObjectBinding:vertexArrayObject];
+}
 
++ (void)unbind {
+    [[REGLStateManager sharedManager] setVertexArrayObjectBinding:0];    
+}
 
 @end

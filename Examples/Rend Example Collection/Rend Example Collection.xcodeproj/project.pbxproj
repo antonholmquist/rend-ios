@@ -36,11 +36,22 @@
 		B25D3D4A1599175600428A79 /* REShader.m in Sources */ = {isa = PBXBuildFile; fileRef = B25D3D2D1599175600428A79 /* REShader.m */; };
 		B25D3D4B1599175600428A79 /* RESprite.m in Sources */ = {isa = PBXBuildFile; fileRef = B25D3D2F1599175600428A79 /* RESprite.m */; };
 		B25D3D4C1599175600428A79 /* RESpriteBatchNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B25D3D311599175600428A79 /* RESpriteBatchNode.m */; };
-		B25D3D4D1599175600428A79 /* RETexture2D.m in Sources */ = {isa = PBXBuildFile; fileRef = B25D3D331599175600428A79 /* RETexture2D.m */; };
+		B25D3D4D1599175600428A79 /* RETexture.m in Sources */ = {isa = PBXBuildFile; fileRef = B25D3D331599175600428A79 /* RETexture.m */; };
 		B25D3D4E1599175600428A79 /* REWorld.m in Sources */ = {isa = PBXBuildFile; fileRef = B25D3D351599175600428A79 /* REWorld.m */; };
 		B25D3D511599176900428A79 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B25D3D501599176900428A79 /* QuartzCore.framework */; };
 		B25D3D531599176D00428A79 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B25D3D521599176D00428A79 /* OpenGLES.framework */; };
 		B25D3D551599178600428A79 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B25D3D541599178600428A79 /* CoreVideo.framework */; };
+		B25D3D5815991DA200428A79 /* GLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B25D3D5715991DA000428A79 /* GLViewController.m */; };
+		B25D3D5C1599237700428A79 /* TeapotController.m in Sources */ = {isa = PBXBuildFile; fileRef = B25D3D5B1599237400428A79 /* TeapotController.m */; };
+		B25D3D5F1599239600428A79 /* teapot.obj in Resources */ = {isa = PBXBuildFile; fileRef = B25D3D5E1599239600428A79 /* teapot.obj */; };
+		B25D3D691599243600428A79 /* REWavefrontMesh.m in Sources */ = {isa = PBXBuildFile; fileRef = B25D3D621599240200428A79 /* REWavefrontMesh.m */; };
+		B25D3D6A1599243600428A79 /* REWavefrontMeshElementIndexBatch.m in Sources */ = {isa = PBXBuildFile; fileRef = B25D3D641599240B00428A79 /* REWavefrontMeshElementIndexBatch.m */; };
+		B25D3D6B1599243600428A79 /* REWavefrontMeshGroupNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B25D3D661599241E00428A79 /* REWavefrontMeshGroupNode.m */; };
+		B25D3D71159925FD00428A79 /* REVertexArrayObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B25D3D6F159925F800428A79 /* REVertexArrayObject.m */; };
+		B25D3D761599283800428A79 /* REKeyframedMeshNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B25D3D731599282B00428A79 /* REKeyframedMeshNode.m */; };
+		B25D3D771599283800428A79 /* REMaterial.m in Sources */ = {isa = PBXBuildFile; fileRef = B25D3D751599283300428A79 /* REMaterial.m */; };
+		B25D3D7A159928A500428A79 /* REWavefrontMeshNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B25D3D79159928A000428A79 /* REWavefrontMeshNode.m */; };
+		B25D3D7D159928F200428A79 /* TeapotNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B25D3D7C159928F200428A79 /* TeapotNode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -103,13 +114,35 @@
 		B25D3D2F1599175600428A79 /* RESprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESprite.m; sourceTree = "<group>"; };
 		B25D3D301599175600428A79 /* RESpriteBatchNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESpriteBatchNode.h; sourceTree = "<group>"; };
 		B25D3D311599175600428A79 /* RESpriteBatchNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESpriteBatchNode.m; sourceTree = "<group>"; };
-		B25D3D321599175600428A79 /* RETexture2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RETexture2D.h; sourceTree = "<group>"; };
-		B25D3D331599175600428A79 /* RETexture2D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RETexture2D.m; sourceTree = "<group>"; };
+		B25D3D321599175600428A79 /* RETexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RETexture.h; sourceTree = "<group>"; };
+		B25D3D331599175600428A79 /* RETexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RETexture.m; sourceTree = "<group>"; };
 		B25D3D341599175600428A79 /* REWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REWorld.h; sourceTree = "<group>"; };
 		B25D3D351599175600428A79 /* REWorld.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REWorld.m; sourceTree = "<group>"; };
 		B25D3D501599176900428A79 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B25D3D521599176D00428A79 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		B25D3D541599178600428A79 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		B25D3D5615991D9D00428A79 /* GLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLViewController.h; sourceTree = "<group>"; };
+		B25D3D5715991DA000428A79 /* GLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLViewController.m; sourceTree = "<group>"; };
+		B25D3D5915991DC800428A79 /* Rend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rend.h; sourceTree = "<group>"; };
+		B25D3D5A1599237100428A79 /* TeapotController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeapotController.h; sourceTree = "<group>"; };
+		B25D3D5B1599237400428A79 /* TeapotController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeapotController.m; sourceTree = "<group>"; };
+		B25D3D5E1599239600428A79 /* teapot.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = teapot.obj; sourceTree = "<group>"; };
+		B25D3D61159923FF00428A79 /* REWavefrontMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REWavefrontMesh.h; sourceTree = "<group>"; };
+		B25D3D621599240200428A79 /* REWavefrontMesh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REWavefrontMesh.m; sourceTree = "<group>"; };
+		B25D3D631599240600428A79 /* REWavefrontMeshElementIndexBatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REWavefrontMeshElementIndexBatch.h; sourceTree = "<group>"; };
+		B25D3D641599240B00428A79 /* REWavefrontMeshElementIndexBatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REWavefrontMeshElementIndexBatch.m; sourceTree = "<group>"; };
+		B25D3D651599241200428A79 /* REWavefrontMeshGroupNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REWavefrontMeshGroupNode.h; sourceTree = "<group>"; };
+		B25D3D661599241E00428A79 /* REWavefrontMeshGroupNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REWavefrontMeshGroupNode.m; sourceTree = "<group>"; };
+		B25D3D6E159925F200428A79 /* REVertexArrayObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REVertexArrayObject.h; sourceTree = "<group>"; };
+		B25D3D6F159925F800428A79 /* REVertexArrayObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REVertexArrayObject.m; sourceTree = "<group>"; };
+		B25D3D721599282600428A79 /* REKeyframedMeshNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REKeyframedMeshNode.h; sourceTree = "<group>"; };
+		B25D3D731599282B00428A79 /* REKeyframedMeshNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REKeyframedMeshNode.m; sourceTree = "<group>"; };
+		B25D3D741599282F00428A79 /* REMaterial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REMaterial.h; sourceTree = "<group>"; };
+		B25D3D751599283300428A79 /* REMaterial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REMaterial.m; sourceTree = "<group>"; };
+		B25D3D781599289B00428A79 /* REWavefrontMeshNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REWavefrontMeshNode.h; sourceTree = "<group>"; };
+		B25D3D79159928A000428A79 /* REWavefrontMeshNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REWavefrontMeshNode.m; sourceTree = "<group>"; };
+		B25D3D7B159928F200428A79 /* TeapotNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeapotNode.h; sourceTree = "<group>"; };
+		B25D3D7C159928F200428A79 /* TeapotNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeapotNode.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +198,10 @@
 				B25D3CFF1599175600428A79 /* Rend */,
 				B25D3CF31599171B00428A79 /* AppDelegate.h */,
 				B25D3CF41599171B00428A79 /* AppDelegate.m */,
+				B25D3D5615991D9D00428A79 /* GLViewController.h */,
+				B25D3D5715991DA000428A79 /* GLViewController.m */,
+				B25D3D60159923B200428A79 /* Teapot */,
+				B25D3D5D1599239300428A79 /* Resources */,
 				B25D3CEB1599171B00428A79 /* Supporting Files */,
 			);
 			path = "Rend Example Collection";
@@ -184,7 +221,22 @@
 		B25D3CFF1599175600428A79 /* Rend */ = {
 			isa = PBXGroup;
 			children = (
+				B25D3D781599289B00428A79 /* REWavefrontMeshNode.h */,
+				B25D3D79159928A000428A79 /* REWavefrontMeshNode.m */,
+				B25D3D721599282600428A79 /* REKeyframedMeshNode.h */,
+				B25D3D731599282B00428A79 /* REKeyframedMeshNode.m */,
+				B25D3D741599282F00428A79 /* REMaterial.h */,
+				B25D3D751599283300428A79 /* REMaterial.m */,
+				B25D3D6E159925F200428A79 /* REVertexArrayObject.h */,
+				B25D3D6F159925F800428A79 /* REVertexArrayObject.m */,
+				B25D3D61159923FF00428A79 /* REWavefrontMesh.h */,
+				B25D3D621599240200428A79 /* REWavefrontMesh.m */,
+				B25D3D631599240600428A79 /* REWavefrontMeshElementIndexBatch.h */,
+				B25D3D641599240B00428A79 /* REWavefrontMeshElementIndexBatch.m */,
+				B25D3D651599241200428A79 /* REWavefrontMeshGroupNode.h */,
+				B25D3D661599241E00428A79 /* REWavefrontMeshGroupNode.m */,
 				B25D3D001599175600428A79 /* CC3Math */,
+				B25D3D5915991DC800428A79 /* Rend.h */,
 				B25D3D0E1599175600428A79 /* REBuffer.h */,
 				B25D3D0F1599175600428A79 /* REBuffer.m */,
 				B25D3D101599175600428A79 /* RECache.h */,
@@ -221,8 +273,8 @@
 				B25D3D2F1599175600428A79 /* RESprite.m */,
 				B25D3D301599175600428A79 /* RESpriteBatchNode.h */,
 				B25D3D311599175600428A79 /* RESpriteBatchNode.m */,
-				B25D3D321599175600428A79 /* RETexture2D.h */,
-				B25D3D331599175600428A79 /* RETexture2D.m */,
+				B25D3D321599175600428A79 /* RETexture.h */,
+				B25D3D331599175600428A79 /* RETexture.m */,
 				B25D3D341599175600428A79 /* REWorld.h */,
 				B25D3D351599175600428A79 /* REWorld.m */,
 			);
@@ -248,6 +300,25 @@
 				B25D3D0D1599175600428A79 /* NSValue+CC3Types.m */,
 			);
 			path = CC3Math;
+			sourceTree = "<group>";
+		};
+		B25D3D5D1599239300428A79 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B25D3D5E1599239600428A79 /* teapot.obj */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B25D3D60159923B200428A79 /* Teapot */ = {
+			isa = PBXGroup;
+			children = (
+				B25D3D5A1599237100428A79 /* TeapotController.h */,
+				B25D3D5B1599237400428A79 /* TeapotController.m */,
+				B25D3D7B159928F200428A79 /* TeapotNode.h */,
+				B25D3D7C159928F200428A79 /* TeapotNode.m */,
+			);
+			name = Teapot;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,6 +373,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B25D3CEF1599171B00428A79 /* InfoPlist.strings in Resources */,
+				B25D3D5F1599239600428A79 /* teapot.obj in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,8 +409,18 @@
 				B25D3D4A1599175600428A79 /* REShader.m in Sources */,
 				B25D3D4B1599175600428A79 /* RESprite.m in Sources */,
 				B25D3D4C1599175600428A79 /* RESpriteBatchNode.m in Sources */,
-				B25D3D4D1599175600428A79 /* RETexture2D.m in Sources */,
+				B25D3D4D1599175600428A79 /* RETexture.m in Sources */,
 				B25D3D4E1599175600428A79 /* REWorld.m in Sources */,
+				B25D3D5815991DA200428A79 /* GLViewController.m in Sources */,
+				B25D3D5C1599237700428A79 /* TeapotController.m in Sources */,
+				B25D3D691599243600428A79 /* REWavefrontMesh.m in Sources */,
+				B25D3D6A1599243600428A79 /* REWavefrontMeshElementIndexBatch.m in Sources */,
+				B25D3D6B1599243600428A79 /* REWavefrontMeshGroupNode.m in Sources */,
+				B25D3D71159925FD00428A79 /* REVertexArrayObject.m in Sources */,
+				B25D3D761599283800428A79 /* REKeyframedMeshNode.m in Sources */,
+				B25D3D771599283800428A79 /* REMaterial.m in Sources */,
+				B25D3D7A159928A500428A79 /* REWavefrontMeshNode.m in Sources */,
+				B25D3D7D159928F200428A79 /* TeapotNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

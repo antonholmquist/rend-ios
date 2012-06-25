@@ -24,7 +24,7 @@
  * THE SOFTWARE.
  */
 
-#import "RETexture2D.h"
+#import "RETexture.h"
 #import "RECache.h"
 #import "REGLStateManager.h"
 
@@ -467,7 +467,7 @@ typedef struct {
             
             // UNPACK DONE. START reading it.
         
-#warning SHOULD WE REALLY SET THESE HERE? THEY SHOULD BE DETEMINED BY OPTIONS?
+            //SHOULD WE REALLY SET THESE HERE? THEY SHOULD BE DETEMINED BY OPTIONS?
             if ([imageData count] > 1)
                 glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
             else

@@ -24,34 +24,28 @@
  * THE SOFTWARE.
  */
 
+#import "REBuffer.h"
+#import "RECache.h"
+#import "RECamera.h"
+#import "REDirector.h"
+#import "REGLStateManager.h"
+#import "REGLTypes.h"
+#import "REGLView.h"
+#import "RELight.h"
+#import "REMaterial.h"
+#import "RENode.h"
+#import "RENSArrayAdditions.h"
+#import "RENSValueAdditions.h"
+#import "REProgram.h"
+#import "RERotator.h"
+#import "REScene.h"
+#import "REScheduler.h"
+#import "REShader.h"
+#import "RESprite.h"
+#import "RESpriteBatchNode.h"
+#import "RETexture.h"
+#import "REWorld.h"
 
-#import <Foundation/Foundation.h>
-
-@class REWavefrontMesh, RETexture, RETexture2D, RETextureCubeMap;
-
-@interface REMeshCache : NSObject
-
-+ (REWavefrontMesh*)meshNamed:(NSString*)filename; // Will cause the mesh to load into memory. Supports both .obj and .reobj.
-
-@end
-
-@interface RETextureCache : NSObject
-
-+ (RETexture2D*)textureNamed:(NSString*)filename;
-+ (RETextureCubeMap*)cubeTextureNamed:(NSString*)filename;
-
-@end
-
-@class REProgram;
-
-@interface REProgramCache : NSObject {
-    NSMutableDictionary *dictionary;
-}
-
-+ (REProgramCache*)sharedCache;
-
-- (REProgram*)programForKey:(id)key;
-- (void)setProgram:(REProgram*)program forKey:(id)key;
-
-
-@end
+#import "REKeyframedMeshNode.h"
+#import "REWavefrontMesh.h"
+#import "REWavefrontMeshNode.h"
