@@ -7,9 +7,10 @@
 //
 
 #import "GLViewController.h"
+#import "TeapotNode.h"
 
 @interface TeapotController : GLViewController {
-    REWavefrontMeshNode *teapotNode_;
+    TeapotNode *teapotNode_;
 }
 
 @end

@@ -29,13 +29,23 @@
     [super viewDidLoad];
     
     glView_ = [[REGLView alloc] initWithFrame:CGRectMake(0, 0, 320, 320)];
-    director_ = [[REDirector alloc] init];
-    scene_ = [[REScene alloc] init];
-    camera_ = [[RECamera alloc] initWithProjection:kRECameraProjectionOrthographic];
-    
-    
     [self.view addSubview:glView_];
-    scene_.camera = camera_;
+    
+    camera_ = [[RECamera alloc] initWithProjection:kRECameraProjectionOrthographic];
+    camera_.position = CC3VectorMake(0, 0, 320);
+    camera_.upDirection = CC3VectorMake(0, 1, 0);
+    camera_.lookDirection = CC3VectorMake(0, 0, -1);
+    camera_.frustumNear = 10;
+    camera_.frustumFar = 640;
+    camera_.frustumLeft = -glView_.frame.size.width / 2.0;
+    camera_.frustumRight = glView_.frame.size.width / 2.0;
+    camera_.frustumBottom = -glView_.frame.size.height / 2.0;
+    camera_.frustumTop = glView_.frame.size.height / 2.0;
+    
+    scene_ = [[REScene alloc] init];
+    scene_.camera = camera_;    
+    
+    director_ = [[REDirector alloc] init];
     director_.view = glView_;
     director_.scene = scene_;
 }

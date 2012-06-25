@@ -19,8 +19,8 @@
     
     REWavefrontMesh *teapotMesh = [REMeshCache meshNamed:@"teapot.obj"];
     
-    teapotNode_ = [[[REKeyframedMeshNode alloc] initWithWavefrontMesh:teapotMesh] autorelease];
-    [teapotNode_ setSizeX:100];
+    teapotNode_ = [[[TeapotNode alloc] initWithDefaultMesh:teapotMesh] autorelease];
+    [teapotNode_ setSizeX:10];
     
     [self.scene addChild:teapotNode_];
 }

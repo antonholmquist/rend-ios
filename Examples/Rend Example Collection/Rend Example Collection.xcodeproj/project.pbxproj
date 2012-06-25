@@ -52,6 +52,8 @@
 		B25D3D771599283800428A79 /* REMaterial.m in Sources */ = {isa = PBXBuildFile; fileRef = B25D3D751599283300428A79 /* REMaterial.m */; };
 		B25D3D7A159928A500428A79 /* REWavefrontMeshNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B25D3D79159928A000428A79 /* REWavefrontMeshNode.m */; };
 		B25D3D7D159928F200428A79 /* TeapotNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B25D3D7C159928F200428A79 /* TeapotNode.m */; };
+		B25D3D8415992B5900428A79 /* sVertexLighting.fsh in Resources */ = {isa = PBXBuildFile; fileRef = B25D3D8215992B4D00428A79 /* sVertexLighting.fsh */; };
+		B25D3D8515992B5900428A79 /* sVertexLighting.vsh in Resources */ = {isa = PBXBuildFile; fileRef = B25D3D8315992B4D00428A79 /* sVertexLighting.vsh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -143,6 +145,8 @@
 		B25D3D79159928A000428A79 /* REWavefrontMeshNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REWavefrontMeshNode.m; sourceTree = "<group>"; };
 		B25D3D7B159928F200428A79 /* TeapotNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeapotNode.h; sourceTree = "<group>"; };
 		B25D3D7C159928F200428A79 /* TeapotNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeapotNode.m; sourceTree = "<group>"; };
+		B25D3D8215992B4D00428A79 /* sVertexLighting.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = sVertexLighting.fsh; sourceTree = "<group>"; };
+		B25D3D8315992B4D00428A79 /* sVertexLighting.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = sVertexLighting.vsh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -313,6 +317,8 @@
 		B25D3D60159923B200428A79 /* Teapot */ = {
 			isa = PBXGroup;
 			children = (
+				B25D3D8215992B4D00428A79 /* sVertexLighting.fsh */,
+				B25D3D8315992B4D00428A79 /* sVertexLighting.vsh */,
 				B25D3D5A1599237100428A79 /* TeapotController.h */,
 				B25D3D5B1599237400428A79 /* TeapotController.m */,
 				B25D3D7B159928F200428A79 /* TeapotNode.h */,
@@ -374,6 +380,8 @@
 			files = (
 				B25D3CEF1599171B00428A79 /* InfoPlist.strings in Resources */,
 				B25D3D5F1599239600428A79 /* teapot.obj in Resources */,
+				B25D3D8415992B5900428A79 /* sVertexLighting.fsh in Resources */,
+				B25D3D8515992B5900428A79 /* sVertexLighting.vsh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
