@@ -1,0 +1,448 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B25D3CE51599171B00428A79 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B25D3CE41599171B00428A79 /* UIKit.framework */; };
+		B25D3CE71599171B00428A79 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B25D3CE61599171B00428A79 /* Foundation.framework */; };
+		B25D3CE91599171B00428A79 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B25D3CE81599171B00428A79 /* CoreGraphics.framework */; };
+		B25D3CEF1599171B00428A79 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B25D3CED1599171B00428A79 /* InfoPlist.strings */; };
+		B25D3CF11599171B00428A79 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B25D3CF01599171B00428A79 /* main.m */; };
+		B25D3CF51599171B00428A79 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B25D3CF41599171B00428A79 /* AppDelegate.m */; };
+		B25D3D361599175600428A79 /* CC3Foundation.m in Sources */ = {isa = PBXBuildFile; fileRef = B25D3D021599175600428A79 /* CC3Foundation.m */; };
+		B25D3D371599175600428A79 /* CC3GLMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = B25D3D041599175600428A79 /* CC3GLMatrix.m */; };
+		B25D3D381599175600428A79 /* CC3Kazmath.c in Sources */ = {isa = PBXBuildFile; fileRef = B25D3D051599175600428A79 /* CC3Kazmath.c */; };
+		B25D3D391599175600428A79 /* CC3Math.m in Sources */ = {isa = PBXBuildFile; fileRef = B25D3D091599175600428A79 /* CC3Math.m */; };
+		B25D3D3A1599175600428A79 /* NSValue+CC3Types.m in Sources */ = {isa = PBXBuildFile; fileRef = B25D3D0D1599175600428A79 /* NSValue+CC3Types.m */; };
+		B25D3D3B1599175600428A79 /* REBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = B25D3D0F1599175600428A79 /* REBuffer.m */; };
+		B25D3D3C1599175600428A79 /* RECache.m in Sources */ = {isa = PBXBuildFile; fileRef = B25D3D111599175600428A79 /* RECache.m */; };
+		B25D3D3D1599175600428A79 /* RECamera.m in Sources */ = {isa = PBXBuildFile; fileRef = B25D3D131599175600428A79 /* RECamera.m */; };
+		B25D3D3E1599175600428A79 /* REDirector.m in Sources */ = {isa = PBXBuildFile; fileRef = B25D3D151599175600428A79 /* REDirector.m */; };
+		B25D3D3F1599175600428A79 /* REGLStateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B25D3D171599175600428A79 /* REGLStateManager.m */; };
+		B25D3D401599175600428A79 /* REGLTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = B25D3D191599175600428A79 /* REGLTypes.m */; };
+		B25D3D411599175600428A79 /* REGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = B25D3D1B1599175600428A79 /* REGLView.m */; };
+		B25D3D421599175600428A79 /* RELight.m in Sources */ = {isa = PBXBuildFile; fileRef = B25D3D1D1599175600428A79 /* RELight.m */; };
+		B25D3D431599175600428A79 /* RENode.m in Sources */ = {isa = PBXBuildFile; fileRef = B25D3D1F1599175600428A79 /* RENode.m */; };
+		B25D3D441599175600428A79 /* RENSArrayAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B25D3D211599175600428A79 /* RENSArrayAdditions.m */; };
+		B25D3D451599175600428A79 /* RENSValueAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B25D3D231599175600428A79 /* RENSValueAdditions.m */; };
+		B25D3D461599175600428A79 /* REProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = B25D3D251599175600428A79 /* REProgram.m */; };
+		B25D3D471599175600428A79 /* RERotator.m in Sources */ = {isa = PBXBuildFile; fileRef = B25D3D271599175600428A79 /* RERotator.m */; };
+		B25D3D481599175600428A79 /* REScene.m in Sources */ = {isa = PBXBuildFile; fileRef = B25D3D291599175600428A79 /* REScene.m */; };
+		B25D3D491599175600428A79 /* REScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = B25D3D2B1599175600428A79 /* REScheduler.m */; };
+		B25D3D4A1599175600428A79 /* REShader.m in Sources */ = {isa = PBXBuildFile; fileRef = B25D3D2D1599175600428A79 /* REShader.m */; };
+		B25D3D4B1599175600428A79 /* RESprite.m in Sources */ = {isa = PBXBuildFile; fileRef = B25D3D2F1599175600428A79 /* RESprite.m */; };
+		B25D3D4C1599175600428A79 /* RESpriteBatchNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B25D3D311599175600428A79 /* RESpriteBatchNode.m */; };
+		B25D3D4D1599175600428A79 /* RETexture2D.m in Sources */ = {isa = PBXBuildFile; fileRef = B25D3D331599175600428A79 /* RETexture2D.m */; };
+		B25D3D4E1599175600428A79 /* REWorld.m in Sources */ = {isa = PBXBuildFile; fileRef = B25D3D351599175600428A79 /* REWorld.m */; };
+		B25D3D511599176900428A79 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B25D3D501599176900428A79 /* QuartzCore.framework */; };
+		B25D3D531599176D00428A79 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B25D3D521599176D00428A79 /* OpenGLES.framework */; };
+		B25D3D551599178600428A79 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B25D3D541599178600428A79 /* CoreVideo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B25D3CE01599171B00428A79 /* Rend Example Collection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rend Example Collection.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B25D3CE41599171B00428A79 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B25D3CE61599171B00428A79 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B25D3CE81599171B00428A79 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B25D3CEC1599171B00428A79 /* Rend Example Collection-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Rend Example Collection-Info.plist"; sourceTree = "<group>"; };
+		B25D3CEE1599171B00428A79 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B25D3CF01599171B00428A79 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B25D3CF21599171B00428A79 /* Rend Example Collection-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Rend Example Collection-Prefix.pch"; sourceTree = "<group>"; };
+		B25D3CF31599171B00428A79 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B25D3CF41599171B00428A79 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B25D3D011599175600428A79 /* CC3Foundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CC3Foundation.h; sourceTree = "<group>"; };
+		B25D3D021599175600428A79 /* CC3Foundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CC3Foundation.m; sourceTree = "<group>"; };
+		B25D3D031599175600428A79 /* CC3GLMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CC3GLMatrix.h; sourceTree = "<group>"; };
+		B25D3D041599175600428A79 /* CC3GLMatrix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CC3GLMatrix.m; sourceTree = "<group>"; };
+		B25D3D051599175600428A79 /* CC3Kazmath.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CC3Kazmath.c; sourceTree = "<group>"; };
+		B25D3D061599175600428A79 /* CC3Kazmath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CC3Kazmath.h; sourceTree = "<group>"; };
+		B25D3D071599175600428A79 /* CC3Logging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CC3Logging.h; sourceTree = "<group>"; };
+		B25D3D081599175600428A79 /* CC3Math.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CC3Math.h; sourceTree = "<group>"; };
+		B25D3D091599175600428A79 /* CC3Math.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CC3Math.m; sourceTree = "<group>"; };
+		B25D3D0A1599175600428A79 /* CC3MathInclude.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CC3MathInclude.h; sourceTree = "<group>"; };
+		B25D3D0B1599175600428A79 /* ccTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccTypes.h; sourceTree = "<group>"; };
+		B25D3D0C1599175600428A79 /* NSValue+CC3Types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValue+CC3Types.h"; sourceTree = "<group>"; };
+		B25D3D0D1599175600428A79 /* NSValue+CC3Types.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSValue+CC3Types.m"; sourceTree = "<group>"; };
+		B25D3D0E1599175600428A79 /* REBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REBuffer.h; sourceTree = "<group>"; };
+		B25D3D0F1599175600428A79 /* REBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REBuffer.m; sourceTree = "<group>"; };
+		B25D3D101599175600428A79 /* RECache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECache.h; sourceTree = "<group>"; };
+		B25D3D111599175600428A79 /* RECache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECache.m; sourceTree = "<group>"; };
+		B25D3D121599175600428A79 /* RECamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECamera.h; sourceTree = "<group>"; };
+		B25D3D131599175600428A79 /* RECamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECamera.m; sourceTree = "<group>"; };
+		B25D3D141599175600428A79 /* REDirector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REDirector.h; sourceTree = "<group>"; };
+		B25D3D151599175600428A79 /* REDirector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REDirector.m; sourceTree = "<group>"; };
+		B25D3D161599175600428A79 /* REGLStateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REGLStateManager.h; sourceTree = "<group>"; };
+		B25D3D171599175600428A79 /* REGLStateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REGLStateManager.m; sourceTree = "<group>"; };
+		B25D3D181599175600428A79 /* REGLTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REGLTypes.h; sourceTree = "<group>"; };
+		B25D3D191599175600428A79 /* REGLTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REGLTypes.m; sourceTree = "<group>"; };
+		B25D3D1A1599175600428A79 /* REGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REGLView.h; sourceTree = "<group>"; };
+		B25D3D1B1599175600428A79 /* REGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REGLView.m; sourceTree = "<group>"; };
+		B25D3D1C1599175600428A79 /* RELight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RELight.h; sourceTree = "<group>"; };
+		B25D3D1D1599175600428A79 /* RELight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RELight.m; sourceTree = "<group>"; };
+		B25D3D1E1599175600428A79 /* RENode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RENode.h; sourceTree = "<group>"; };
+		B25D3D1F1599175600428A79 /* RENode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RENode.m; sourceTree = "<group>"; };
+		B25D3D201599175600428A79 /* RENSArrayAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RENSArrayAdditions.h; sourceTree = "<group>"; };
+		B25D3D211599175600428A79 /* RENSArrayAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RENSArrayAdditions.m; sourceTree = "<group>"; };
+		B25D3D221599175600428A79 /* RENSValueAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RENSValueAdditions.h; sourceTree = "<group>"; };
+		B25D3D231599175600428A79 /* RENSValueAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RENSValueAdditions.m; sourceTree = "<group>"; };
+		B25D3D241599175600428A79 /* REProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REProgram.h; sourceTree = "<group>"; };
+		B25D3D251599175600428A79 /* REProgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REProgram.m; sourceTree = "<group>"; };
+		B25D3D261599175600428A79 /* RERotator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RERotator.h; sourceTree = "<group>"; };
+		B25D3D271599175600428A79 /* RERotator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RERotator.m; sourceTree = "<group>"; };
+		B25D3D281599175600428A79 /* REScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REScene.h; sourceTree = "<group>"; };
+		B25D3D291599175600428A79 /* REScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REScene.m; sourceTree = "<group>"; };
+		B25D3D2A1599175600428A79 /* REScheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REScheduler.h; sourceTree = "<group>"; };
+		B25D3D2B1599175600428A79 /* REScheduler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REScheduler.m; sourceTree = "<group>"; };
+		B25D3D2C1599175600428A79 /* REShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REShader.h; sourceTree = "<group>"; };
+		B25D3D2D1599175600428A79 /* REShader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REShader.m; sourceTree = "<group>"; };
+		B25D3D2E1599175600428A79 /* RESprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESprite.h; sourceTree = "<group>"; };
+		B25D3D2F1599175600428A79 /* RESprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESprite.m; sourceTree = "<group>"; };
+		B25D3D301599175600428A79 /* RESpriteBatchNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESpriteBatchNode.h; sourceTree = "<group>"; };
+		B25D3D311599175600428A79 /* RESpriteBatchNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESpriteBatchNode.m; sourceTree = "<group>"; };
+		B25D3D321599175600428A79 /* RETexture2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RETexture2D.h; sourceTree = "<group>"; };
+		B25D3D331599175600428A79 /* RETexture2D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RETexture2D.m; sourceTree = "<group>"; };
+		B25D3D341599175600428A79 /* REWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REWorld.h; sourceTree = "<group>"; };
+		B25D3D351599175600428A79 /* REWorld.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REWorld.m; sourceTree = "<group>"; };
+		B25D3D501599176900428A79 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B25D3D521599176D00428A79 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		B25D3D541599178600428A79 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B25D3CDD1599171B00428A79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B25D3D551599178600428A79 /* CoreVideo.framework in Frameworks */,
+				B25D3D531599176D00428A79 /* OpenGLES.framework in Frameworks */,
+				B25D3D511599176900428A79 /* QuartzCore.framework in Frameworks */,
+				B25D3CE51599171B00428A79 /* UIKit.framework in Frameworks */,
+				B25D3CE71599171B00428A79 /* Foundation.framework in Frameworks */,
+				B25D3CE91599171B00428A79 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B25D3CD51599171B00428A79 = {
+			isa = PBXGroup;
+			children = (
+				B25D3CEA1599171B00428A79 /* Rend Example Collection */,
+				B25D3CE31599171B00428A79 /* Frameworks */,
+				B25D3CE11599171B00428A79 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B25D3CE11599171B00428A79 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B25D3CE01599171B00428A79 /* Rend Example Collection.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B25D3CE31599171B00428A79 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B25D3D541599178600428A79 /* CoreVideo.framework */,
+				B25D3D521599176D00428A79 /* OpenGLES.framework */,
+				B25D3D501599176900428A79 /* QuartzCore.framework */,
+				B25D3CE41599171B00428A79 /* UIKit.framework */,
+				B25D3CE61599171B00428A79 /* Foundation.framework */,
+				B25D3CE81599171B00428A79 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B25D3CEA1599171B00428A79 /* Rend Example Collection */ = {
+			isa = PBXGroup;
+			children = (
+				B25D3CFF1599175600428A79 /* Rend */,
+				B25D3CF31599171B00428A79 /* AppDelegate.h */,
+				B25D3CF41599171B00428A79 /* AppDelegate.m */,
+				B25D3CEB1599171B00428A79 /* Supporting Files */,
+			);
+			path = "Rend Example Collection";
+			sourceTree = "<group>";
+		};
+		B25D3CEB1599171B00428A79 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B25D3CEC1599171B00428A79 /* Rend Example Collection-Info.plist */,
+				B25D3CED1599171B00428A79 /* InfoPlist.strings */,
+				B25D3CF01599171B00428A79 /* main.m */,
+				B25D3CF21599171B00428A79 /* Rend Example Collection-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B25D3CFF1599175600428A79 /* Rend */ = {
+			isa = PBXGroup;
+			children = (
+				B25D3D001599175600428A79 /* CC3Math */,
+				B25D3D0E1599175600428A79 /* REBuffer.h */,
+				B25D3D0F1599175600428A79 /* REBuffer.m */,
+				B25D3D101599175600428A79 /* RECache.h */,
+				B25D3D111599175600428A79 /* RECache.m */,
+				B25D3D121599175600428A79 /* RECamera.h */,
+				B25D3D131599175600428A79 /* RECamera.m */,
+				B25D3D141599175600428A79 /* REDirector.h */,
+				B25D3D151599175600428A79 /* REDirector.m */,
+				B25D3D161599175600428A79 /* REGLStateManager.h */,
+				B25D3D171599175600428A79 /* REGLStateManager.m */,
+				B25D3D181599175600428A79 /* REGLTypes.h */,
+				B25D3D191599175600428A79 /* REGLTypes.m */,
+				B25D3D1A1599175600428A79 /* REGLView.h */,
+				B25D3D1B1599175600428A79 /* REGLView.m */,
+				B25D3D1C1599175600428A79 /* RELight.h */,
+				B25D3D1D1599175600428A79 /* RELight.m */,
+				B25D3D1E1599175600428A79 /* RENode.h */,
+				B25D3D1F1599175600428A79 /* RENode.m */,
+				B25D3D201599175600428A79 /* RENSArrayAdditions.h */,
+				B25D3D211599175600428A79 /* RENSArrayAdditions.m */,
+				B25D3D221599175600428A79 /* RENSValueAdditions.h */,
+				B25D3D231599175600428A79 /* RENSValueAdditions.m */,
+				B25D3D241599175600428A79 /* REProgram.h */,
+				B25D3D251599175600428A79 /* REProgram.m */,
+				B25D3D261599175600428A79 /* RERotator.h */,
+				B25D3D271599175600428A79 /* RERotator.m */,
+				B25D3D281599175600428A79 /* REScene.h */,
+				B25D3D291599175600428A79 /* REScene.m */,
+				B25D3D2A1599175600428A79 /* REScheduler.h */,
+				B25D3D2B1599175600428A79 /* REScheduler.m */,
+				B25D3D2C1599175600428A79 /* REShader.h */,
+				B25D3D2D1599175600428A79 /* REShader.m */,
+				B25D3D2E1599175600428A79 /* RESprite.h */,
+				B25D3D2F1599175600428A79 /* RESprite.m */,
+				B25D3D301599175600428A79 /* RESpriteBatchNode.h */,
+				B25D3D311599175600428A79 /* RESpriteBatchNode.m */,
+				B25D3D321599175600428A79 /* RETexture2D.h */,
+				B25D3D331599175600428A79 /* RETexture2D.m */,
+				B25D3D341599175600428A79 /* REWorld.h */,
+				B25D3D351599175600428A79 /* REWorld.m */,
+			);
+			name = Rend;
+			path = ../../../Classes;
+			sourceTree = "<group>";
+		};
+		B25D3D001599175600428A79 /* CC3Math */ = {
+			isa = PBXGroup;
+			children = (
+				B25D3D011599175600428A79 /* CC3Foundation.h */,
+				B25D3D021599175600428A79 /* CC3Foundation.m */,
+				B25D3D031599175600428A79 /* CC3GLMatrix.h */,
+				B25D3D041599175600428A79 /* CC3GLMatrix.m */,
+				B25D3D051599175600428A79 /* CC3Kazmath.c */,
+				B25D3D061599175600428A79 /* CC3Kazmath.h */,
+				B25D3D071599175600428A79 /* CC3Logging.h */,
+				B25D3D081599175600428A79 /* CC3Math.h */,
+				B25D3D091599175600428A79 /* CC3Math.m */,
+				B25D3D0A1599175600428A79 /* CC3MathInclude.h */,
+				B25D3D0B1599175600428A79 /* ccTypes.h */,
+				B25D3D0C1599175600428A79 /* NSValue+CC3Types.h */,
+				B25D3D0D1599175600428A79 /* NSValue+CC3Types.m */,
+			);
+			path = CC3Math;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B25D3CDF1599171B00428A79 /* Rend Example Collection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B25D3CF81599171B00428A79 /* Build configuration list for PBXNativeTarget "Rend Example Collection" */;
+			buildPhases = (
+				B25D3CDC1599171B00428A79 /* Sources */,
+				B25D3CDD1599171B00428A79 /* Frameworks */,
+				B25D3CDE1599171B00428A79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Rend Example Collection";
+			productName = "Rend Example Collection";
+			productReference = B25D3CE01599171B00428A79 /* Rend Example Collection.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B25D3CD71599171B00428A79 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = Monterosa;
+			};
+			buildConfigurationList = B25D3CDA1599171B00428A79 /* Build configuration list for PBXProject "Rend Example Collection" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B25D3CD51599171B00428A79;
+			productRefGroup = B25D3CE11599171B00428A79 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B25D3CDF1599171B00428A79 /* Rend Example Collection */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B25D3CDE1599171B00428A79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B25D3CEF1599171B00428A79 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B25D3CDC1599171B00428A79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B25D3CF11599171B00428A79 /* main.m in Sources */,
+				B25D3CF51599171B00428A79 /* AppDelegate.m in Sources */,
+				B25D3D361599175600428A79 /* CC3Foundation.m in Sources */,
+				B25D3D371599175600428A79 /* CC3GLMatrix.m in Sources */,
+				B25D3D381599175600428A79 /* CC3Kazmath.c in Sources */,
+				B25D3D391599175600428A79 /* CC3Math.m in Sources */,
+				B25D3D3A1599175600428A79 /* NSValue+CC3Types.m in Sources */,
+				B25D3D3B1599175600428A79 /* REBuffer.m in Sources */,
+				B25D3D3C1599175600428A79 /* RECache.m in Sources */,
+				B25D3D3D1599175600428A79 /* RECamera.m in Sources */,
+				B25D3D3E1599175600428A79 /* REDirector.m in Sources */,
+				B25D3D3F1599175600428A79 /* REGLStateManager.m in Sources */,
+				B25D3D401599175600428A79 /* REGLTypes.m in Sources */,
+				B25D3D411599175600428A79 /* REGLView.m in Sources */,
+				B25D3D421599175600428A79 /* RELight.m in Sources */,
+				B25D3D431599175600428A79 /* RENode.m in Sources */,
+				B25D3D441599175600428A79 /* RENSArrayAdditions.m in Sources */,
+				B25D3D451599175600428A79 /* RENSValueAdditions.m in Sources */,
+				B25D3D461599175600428A79 /* REProgram.m in Sources */,
+				B25D3D471599175600428A79 /* RERotator.m in Sources */,
+				B25D3D481599175600428A79 /* REScene.m in Sources */,
+				B25D3D491599175600428A79 /* REScheduler.m in Sources */,
+				B25D3D4A1599175600428A79 /* REShader.m in Sources */,
+				B25D3D4B1599175600428A79 /* RESprite.m in Sources */,
+				B25D3D4C1599175600428A79 /* RESpriteBatchNode.m in Sources */,
+				B25D3D4D1599175600428A79 /* RETexture2D.m in Sources */,
+				B25D3D4E1599175600428A79 /* REWorld.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B25D3CED1599171B00428A79 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B25D3CEE1599171B00428A79 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B25D3CF61599171B00428A79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B25D3CF71599171B00428A79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B25D3CF91599171B00428A79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Rend Example Collection/Rend Example Collection-Prefix.pch";
+				INFOPLIST_FILE = "Rend Example Collection/Rend Example Collection-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B25D3CFA1599171B00428A79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Rend Example Collection/Rend Example Collection-Prefix.pch";
+				INFOPLIST_FILE = "Rend Example Collection/Rend Example Collection-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B25D3CDA1599171B00428A79 /* Build configuration list for PBXProject "Rend Example Collection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B25D3CF61599171B00428A79 /* Debug */,
+				B25D3CF71599171B00428A79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B25D3CF81599171B00428A79 /* Build configuration list for PBXNativeTarget "Rend Example Collection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B25D3CF91599171B00428A79 /* Debug */,
+				B25D3CFA1599171B00428A79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B25D3CD71599171B00428A79 /* Project object */;
+}
