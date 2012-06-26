@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B25D2E5615999D9D004CA9DE /* sRESprite.fsh in Resources */ = {isa = PBXBuildFile; fileRef = B25D2E5115999D8F004CA9DE /* sRESprite.fsh */; };
+		B25D2E5715999D9D004CA9DE /* sRESprite.vsh in Resources */ = {isa = PBXBuildFile; fileRef = B25D2E5215999D8F004CA9DE /* sRESprite.vsh */; };
+		B25D2E5815999D9D004CA9DE /* sRESpriteBatch.fsh in Resources */ = {isa = PBXBuildFile; fileRef = B25D2E5315999D8F004CA9DE /* sRESpriteBatch.fsh */; };
+		B25D2E5915999D9D004CA9DE /* sRESpriteBatch.vsh in Resources */ = {isa = PBXBuildFile; fileRef = B25D2E5415999D8F004CA9DE /* sRESpriteBatch.vsh */; };
+		B25D2E5B15999DD3004CA9DE /* monterosa_twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = B25D2E5A15999DD3004CA9DE /* monterosa_twitter.png */; };
+		B25D2E601599CF62004CA9DE /* sFragmentLighting.fsh in Resources */ = {isa = PBXBuildFile; fileRef = B25D2E5C1599CF4A004CA9DE /* sFragmentLighting.fsh */; };
+		B25D2E611599CF62004CA9DE /* sFragmentLighting.vsh in Resources */ = {isa = PBXBuildFile; fileRef = B25D2E5D1599CF4A004CA9DE /* sFragmentLighting.vsh */; };
+		B25D2E631599D497004CA9DE /* teapot.mtl in Resources */ = {isa = PBXBuildFile; fileRef = B25D2E621599D497004CA9DE /* teapot.mtl */; };
 		B25D3CE51599171B00428A79 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B25D3CE41599171B00428A79 /* UIKit.framework */; };
 		B25D3CE71599171B00428A79 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B25D3CE61599171B00428A79 /* Foundation.framework */; };
 		B25D3CE91599171B00428A79 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B25D3CE81599171B00428A79 /* CoreGraphics.framework */; };
@@ -57,6 +65,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B25D2E5115999D8F004CA9DE /* sRESprite.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = sRESprite.fsh; sourceTree = "<group>"; };
+		B25D2E5215999D8F004CA9DE /* sRESprite.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = sRESprite.vsh; sourceTree = "<group>"; };
+		B25D2E5315999D8F004CA9DE /* sRESpriteBatch.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = sRESpriteBatch.fsh; sourceTree = "<group>"; };
+		B25D2E5415999D8F004CA9DE /* sRESpriteBatch.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = sRESpriteBatch.vsh; sourceTree = "<group>"; };
+		B25D2E5A15999DD3004CA9DE /* monterosa_twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = monterosa_twitter.png; path = ../../../../../../Desktop/monterosa_twitter.png; sourceTree = "<group>"; };
+		B25D2E5C1599CF4A004CA9DE /* sFragmentLighting.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = sFragmentLighting.fsh; sourceTree = "<group>"; };
+		B25D2E5D1599CF4A004CA9DE /* sFragmentLighting.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = sFragmentLighting.vsh; sourceTree = "<group>"; };
+		B25D2E621599D497004CA9DE /* teapot.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = teapot.mtl; sourceTree = "<group>"; };
 		B25D3CE01599171B00428A79 /* Rend Example Collection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rend Example Collection.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B25D3CE41599171B00428A79 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B25D3CE61599171B00428A79 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -166,6 +182,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B25D2E5015999D8F004CA9DE /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				B25D2E5115999D8F004CA9DE /* sRESprite.fsh */,
+				B25D2E5215999D8F004CA9DE /* sRESprite.vsh */,
+				B25D2E5315999D8F004CA9DE /* sRESpriteBatch.fsh */,
+				B25D2E5415999D8F004CA9DE /* sRESpriteBatch.vsh */,
+			);
+			name = Shaders;
+			path = ../../../Shaders;
+			sourceTree = "<group>";
+		};
 		B25D3CD51599171B00428A79 = {
 			isa = PBXGroup;
 			children = (
@@ -200,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				B25D3CFF1599175600428A79 /* Rend */,
+				B25D2E5015999D8F004CA9DE /* Shaders */,
 				B25D3CF31599171B00428A79 /* AppDelegate.h */,
 				B25D3CF41599171B00428A79 /* AppDelegate.m */,
 				B25D3D5615991D9D00428A79 /* GLViewController.h */,
@@ -225,6 +254,7 @@
 		B25D3CFF1599175600428A79 /* Rend */ = {
 			isa = PBXGroup;
 			children = (
+				B25D3D001599175600428A79 /* CC3Math */,
 				B25D3D781599289B00428A79 /* REWavefrontMeshNode.h */,
 				B25D3D79159928A000428A79 /* REWavefrontMeshNode.m */,
 				B25D3D721599282600428A79 /* REKeyframedMeshNode.h */,
@@ -239,7 +269,6 @@
 				B25D3D641599240B00428A79 /* REWavefrontMeshElementIndexBatch.m */,
 				B25D3D651599241200428A79 /* REWavefrontMeshGroupNode.h */,
 				B25D3D661599241E00428A79 /* REWavefrontMeshGroupNode.m */,
-				B25D3D001599175600428A79 /* CC3Math */,
 				B25D3D5915991DC800428A79 /* Rend.h */,
 				B25D3D0E1599175600428A79 /* REBuffer.h */,
 				B25D3D0F1599175600428A79 /* REBuffer.m */,
@@ -309,7 +338,9 @@
 		B25D3D5D1599239300428A79 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B25D2E5A15999DD3004CA9DE /* monterosa_twitter.png */,
 				B25D3D5E1599239600428A79 /* teapot.obj */,
+				B25D2E621599D497004CA9DE /* teapot.mtl */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -319,6 +350,8 @@
 			children = (
 				B25D3D8215992B4D00428A79 /* sVertexLighting.fsh */,
 				B25D3D8315992B4D00428A79 /* sVertexLighting.vsh */,
+				B25D2E5C1599CF4A004CA9DE /* sFragmentLighting.fsh */,
+				B25D2E5D1599CF4A004CA9DE /* sFragmentLighting.vsh */,
 				B25D3D5A1599237100428A79 /* TeapotController.h */,
 				B25D3D5B1599237400428A79 /* TeapotController.m */,
 				B25D3D7B159928F200428A79 /* TeapotNode.h */,
@@ -378,10 +411,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B25D2E5615999D9D004CA9DE /* sRESprite.fsh in Resources */,
+				B25D2E5715999D9D004CA9DE /* sRESprite.vsh in Resources */,
+				B25D2E5815999D9D004CA9DE /* sRESpriteBatch.fsh in Resources */,
+				B25D2E5915999D9D004CA9DE /* sRESpriteBatch.vsh in Resources */,
 				B25D3CEF1599171B00428A79 /* InfoPlist.strings in Resources */,
 				B25D3D5F1599239600428A79 /* teapot.obj in Resources */,
 				B25D3D8415992B5900428A79 /* sVertexLighting.fsh in Resources */,
 				B25D3D8515992B5900428A79 /* sVertexLighting.vsh in Resources */,
+				B25D2E5B15999DD3004CA9DE /* monterosa_twitter.png in Resources */,
+				B25D2E601599CF62004CA9DE /* sFragmentLighting.fsh in Resources */,
+				B25D2E611599CF62004CA9DE /* sFragmentLighting.vsh in Resources */,
+				B25D2E631599D497004CA9DE /* teapot.mtl in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

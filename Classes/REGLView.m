@@ -65,7 +65,9 @@
 - (id)initWithFrame:(CGRect)frame colorFormat:(NSString*)colorFormat multisampling:(BOOL)multisampling scale:(float)scale {
     if ((self = [super initWithFrame:frame])) {
         
-        multisampling_ = TARGET_IPHONE_SIMULATOR ? NO : multisampling; // Never use multisampling on simulator (it's slow, but works)
+        //multisampling_ = TARGET_IPHONE_SIMULATOR ? NO : multisampling; // Never use multisampling on simulator (it's slow, but works)
+        multisampling_ = multisampling;
+        
         
         self.opaque = YES; // Should depend on colorFormat?
         

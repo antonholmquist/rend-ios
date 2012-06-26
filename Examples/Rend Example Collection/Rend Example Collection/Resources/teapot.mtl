@@ -1,0 +1,9 @@
+# Max2Mtl Version 4.0 Mar 10th, 2001
+newmtl m1
+Ka  0.1 0.1 0.1
+Kd  1 1 1
+Ks  0.8 0.8 0.8
+d  1.0
+Ns  32
+illum 2
+# EOF

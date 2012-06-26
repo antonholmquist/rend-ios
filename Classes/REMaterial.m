@@ -50,10 +50,10 @@
 
 - (id)init {
     if ((self = [super init])) {
-        ambient_ = CC3Vector4Make(1, 1, 1, 1);
-        diffuse_ = CC3Vector4Make(1, 1, 1, 1);
-        specular_ = CC3Vector4Make(1, 1, 1, 1);
-        shininess_ = 1;
+        ambient_ = CC3Vector4Make(0.2, 0.2, 0.2, 1.0);
+        diffuse_ = CC3Vector4Make(0.8, 0.8, 0.8, 1.0);
+        specular_ = CC3Vector4Make(0, 0, 0, 1);
+        shininess_ = 0;
     } return self;
 }
 

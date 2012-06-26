@@ -53,7 +53,7 @@
         self.anchorCoordinate = CC3BoundingBoxCenter(self.boundingBox);
         
         
-        //NSLog(@"%f, %f, %f -> %f, %f, %f", boundingBox.minimum.x, boundingBox.minimum.y, boundingBox.minimum.z, boundingBox.maximum.x, boundingBox.maximum.y, boundingBox.maximum.z);
+       // NSLog(@"%f, %f, %f -> %f, %f, %f", boundingBox.minimum.x, boundingBox.minimum.y, boundingBox.minimum.z, boundingBox.maximum.x, boundingBox.maximum.y, boundingBox.maximum.z);
         
         
         environmentMixRatio_ = 0.5;
@@ -135,10 +135,10 @@
     float specularFactor = 0.3;
      */
     
-    glUniform4f([p uniformLocation:@"u_materialProperties.ambientColor"], material_.ambient.x, material_.ambient.y, material_.ambient.z, material_.ambient.w);
-    glUniform4f([p uniformLocation:@"u_materialProperties.diffuseColor"], material_.diffuse.x, material_.diffuse.y, material_.diffuse.z, material_.diffuse.w);
-    glUniform4f([p uniformLocation:@"u_materialProperties.specularColor"], material_.specular.x, material_.specular.y, material_.specular.z, material_.specular.w);
-    glUniform1f([p uniformLocation:@"u_materialProperties.specularExponent"], material_.shininess);
+    glUniform4f([p uniformLocation:@"u_material.ambientFactor"], material_.ambient.x, material_.ambient.y, material_.ambient.z, material_.ambient.w);
+    glUniform4f([p uniformLocation:@"u_material.diffuseFactor"], material_.diffuse.x, material_.diffuse.y, material_.diffuse.z, material_.diffuse.w);
+    glUniform4f([p uniformLocation:@"u_material.specularFactor"], material_.specular.x, material_.specular.y, material_.specular.z, material_.specular.w);
+    glUniform1f([p uniformLocation:@"u_material.shininess"], material_.shininess);
     
     
     int directionalLightCount = [directionalLights count] > kShaderMaxDirectionalLights ? kShaderMaxDirectionalLights : [directionalLights count];
@@ -160,11 +160,11 @@
         
         // Avoid generating strings dynamically for speed reasons. Can make a big difference (like 20% of total execution time).
         if (i == 0) {
-            uniformDirection = @"u_directionalLight0.direction";
-            uniformHalfplane = @"u_directionalLight0.halfplane";
-            uniformAmbientColor = @"u_directionalLight0.ambientColor";
-            uniformDiffuseColor = @"u_directionalLight0.diffuseColor";
-            uniformSpecularColor = @"u_directionalLight0.specularColor";
+            uniformDirection = @"u_directionalLight.direction";
+            uniformHalfplane = @"u_directionalLight.halfplane";
+            uniformAmbientColor = @"u_directionalLight.ambientColor";
+            uniformDiffuseColor = @"u_directionalLight.diffuseColor";
+            uniformSpecularColor = @"u_directionalLight.specularColor";
         }
         
         if (i == 1) {
@@ -210,8 +210,8 @@
         
         // We're sending position to direction. This is from OpenGL ES 2.0 programming guide p.161. This
         // seem to be valid because light (and viewer) is at infinity. position.x = 0; And they don't negate it.
-        CC3Vector normalizedPosition = CC3VectorNormalize(light.position);
-        glUniform3f(u_directionalLightDirection, normalizedPosition.x, normalizedPosition.y, normalizedPosition.z);
+        CC3Vector normalizedDirection = CC3VectorNormalize(light.direction);
+        glUniform3f(u_directionalLightDirection, normalizedDirection.x, normalizedDirection.y, normalizedDirection.z);
         glUniform3f(u_directionalLightHalfplane, halfplane.x, halfplane.y, halfplane.z);
         
        // glUniform3f(u_directionalLightHalfplane, 1, 1, 1);
@@ -244,9 +244,9 @@
     if ([wavefrontMeshA_ hasBuffers]) 
         [wavefrontMeshA_ bindBuffers];
     
-    GLint a_positionA = [p attribLocation:@"a_positionA"];
+    GLint a_positionA = [p attribLocation:@"a_position"];
     GLint a_positionB = [p attribLocation:@"a_positionB"];
-    GLint a_normalA = [p attribLocation:@"a_normalA"];
+    GLint a_normalA = [p attribLocation:@"a_normal"];
     GLint a_normalB = [p attribLocation:@"a_normalB"];
     GLint a_texCoord = [p attribLocation:@"a_texCoord"];
     

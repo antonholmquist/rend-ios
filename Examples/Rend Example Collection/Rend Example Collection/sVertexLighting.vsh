@@ -83,6 +83,7 @@ void main() {
     } 
     
     v_light = ambientLight + diffuseLight + specularLight;
+
     gl_Position = u_mvpMatrix * mcPosition;    
     
 }

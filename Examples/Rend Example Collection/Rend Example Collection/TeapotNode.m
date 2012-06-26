@@ -10,9 +10,11 @@
 
 @implementation TeapotNode
 
+
 + (REProgram*)program {
-    return [REProgram programWithVertexFilename:@"sVertexLighting.vsh" fragmentFilename:@"sVertexLighting.fsh"];
-    
+    //return [REProgram programWithVertexFilename:@"sVertexLighting.vsh" fragmentFilename:@"sVertexLighting.fsh"];
+    return [REProgram programWithVertexFilename:@"sFragmentLighting.vsh" fragmentFilename:@"sFragmentLighting.fsh"];
 }
+ 
 
 @end

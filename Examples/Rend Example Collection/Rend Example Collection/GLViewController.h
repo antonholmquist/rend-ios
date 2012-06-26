@@ -11,11 +11,15 @@
 @interface GLViewController : UIViewController {
     REGLView *glView_;
     REScene *scene_;
+    REWorld *world_;
     REDirector *director_;
     RECamera *camera_;
 }
 
 @property (nonatomic, readonly) REGLView *glView;
 @property (nonatomic, readonly) REScene *scene;
+@property (nonatomic, readonly) REWorld *world;
+
+- (void)update:(float)dt;
 
 @end

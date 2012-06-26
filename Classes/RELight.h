@@ -32,14 +32,12 @@
     CC3Vector4 ambientColor;
     CC3Vector4 diffuseColor;
     CC3Vector4 specularColor;
-    //float specularExponent; // Shininess
 }
 
 @property (nonatomic, assign) CC3Vector position;
 @property (nonatomic, assign) CC3Vector4 ambientColor;
 @property (nonatomic, assign) CC3Vector4 diffuseColor;
 @property (nonatomic, assign) CC3Vector4 specularColor;
-//@property (nonatomic, assign) float specularExponent;
 
 + (id)light;
 
@@ -49,7 +47,7 @@
     CC3Vector direction_;
 }
 
-@property (nonatomic, assign) CC3Vector direction; // Deprecated, use position instead.
+@property (nonatomic, assign) CC3Vector direction; 
 
 @end
 
@@ -58,6 +56,7 @@
     
     CC3Vector attenuation; // constant, linear, quadratic
 }
+
 
 @property (nonatomic, assign) CC3Vector attenuation;
 

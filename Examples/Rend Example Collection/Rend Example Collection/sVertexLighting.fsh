@@ -29,5 +29,5 @@ precision highp float;
 varying vec4 v_light;
 
 void main() { 
-    gl_FragColor = vec4(1.0); //v_light;
+    gl_FragColor = v_light;
 }
