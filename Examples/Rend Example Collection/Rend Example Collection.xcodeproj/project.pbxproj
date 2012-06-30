@@ -11,7 +11,6 @@
 		B25D2E5715999D9D004CA9DE /* sRESprite.vsh in Resources */ = {isa = PBXBuildFile; fileRef = B25D2E5215999D8F004CA9DE /* sRESprite.vsh */; };
 		B25D2E5815999D9D004CA9DE /* sRESpriteBatch.fsh in Resources */ = {isa = PBXBuildFile; fileRef = B25D2E5315999D8F004CA9DE /* sRESpriteBatch.fsh */; };
 		B25D2E5915999D9D004CA9DE /* sRESpriteBatch.vsh in Resources */ = {isa = PBXBuildFile; fileRef = B25D2E5415999D8F004CA9DE /* sRESpriteBatch.vsh */; };
-		B25D2E5B15999DD3004CA9DE /* monterosa_twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = B25D2E5A15999DD3004CA9DE /* monterosa_twitter.png */; };
 		B25D2E601599CF62004CA9DE /* sFragmentLighting.fsh in Resources */ = {isa = PBXBuildFile; fileRef = B25D2E5C1599CF4A004CA9DE /* sFragmentLighting.fsh */; };
 		B25D2E611599CF62004CA9DE /* sFragmentLighting.vsh in Resources */ = {isa = PBXBuildFile; fileRef = B25D2E5D1599CF4A004CA9DE /* sFragmentLighting.vsh */; };
 		B25D2E631599D497004CA9DE /* teapot.mtl in Resources */ = {isa = PBXBuildFile; fileRef = B25D2E621599D497004CA9DE /* teapot.mtl */; };
@@ -69,7 +68,6 @@
 		B25D2E5215999D8F004CA9DE /* sRESprite.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = sRESprite.vsh; sourceTree = "<group>"; };
 		B25D2E5315999D8F004CA9DE /* sRESpriteBatch.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = sRESpriteBatch.fsh; sourceTree = "<group>"; };
 		B25D2E5415999D8F004CA9DE /* sRESpriteBatch.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = sRESpriteBatch.vsh; sourceTree = "<group>"; };
-		B25D2E5A15999DD3004CA9DE /* monterosa_twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = monterosa_twitter.png; path = ../../../../../../Desktop/monterosa_twitter.png; sourceTree = "<group>"; };
 		B25D2E5C1599CF4A004CA9DE /* sFragmentLighting.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = sFragmentLighting.fsh; sourceTree = "<group>"; };
 		B25D2E5D1599CF4A004CA9DE /* sFragmentLighting.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = sFragmentLighting.vsh; sourceTree = "<group>"; };
 		B25D2E621599D497004CA9DE /* teapot.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = teapot.mtl; sourceTree = "<group>"; };
@@ -338,7 +336,6 @@
 		B25D3D5D1599239300428A79 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				B25D2E5A15999DD3004CA9DE /* monterosa_twitter.png */,
 				B25D3D5E1599239600428A79 /* teapot.obj */,
 				B25D2E621599D497004CA9DE /* teapot.mtl */,
 			);
@@ -419,7 +416,6 @@
 				B25D3D5F1599239600428A79 /* teapot.obj in Resources */,
 				B25D3D8415992B5900428A79 /* sVertexLighting.fsh in Resources */,
 				B25D3D8515992B5900428A79 /* sVertexLighting.vsh in Resources */,
-				B25D2E5B15999DD3004CA9DE /* monterosa_twitter.png in Resources */,
 				B25D2E601599CF62004CA9DE /* sFragmentLighting.fsh in Resources */,
 				B25D2E611599CF62004CA9DE /* sFragmentLighting.vsh in Resources */,
 				B25D2E631599D497004CA9DE /* teapot.mtl in Resources */,
