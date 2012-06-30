@@ -516,6 +516,25 @@
         }
          */
         
+        
+        // Calculate tangents
+        
+        for (int i = 0; i < elementIndexCount; i += 3) {
+            GLushort *indices = elementIndices + i;
+            
+            REWavefrontVertexAttributes attributes0 = vertexAttributes[indices[0]];
+            REWavefrontVertexAttributes attributes1 = vertexAttributes[indices[1]];
+            //REWavefrontVertexAttributes attributes2 = vertexAttributes[indices[2]];
+            
+            CC3Vector tangent = CC3VectorDifference(attributes0.vertex, attributes1.vertex);
+            tangent = CC3VectorNormalize(tangent);
+            
+            vertexAttributes[indices[0]].tangent = tangent;
+            vertexAttributes[indices[1]].tangent = tangent;
+            vertexAttributes[indices[2]].tangent = tangent;
+        }
+
+        
     } return self;
 }
 
