@@ -508,33 +508,60 @@
             }
         }
         
-        /*
-        //NSLog(@"elementsByGroup: %@", elementsByGroup);
-        
-        for (REWavefrontElementSet *set in [elementsByGroup allValues]) {
-            NSLog(@"set: %@", set.indexRanges);
-        }
-         */
-        
-        
-        // Calculate tangents
-        
-        for (int i = 0; i < elementIndexCount; i += 3) {
-            GLushort *indices = elementIndices + i;
-            
-            REWavefrontVertexAttributes attributes0 = vertexAttributes[indices[0]];
-            REWavefrontVertexAttributes attributes1 = vertexAttributes[indices[1]];
-            //REWavefrontVertexAttributes attributes2 = vertexAttributes[indices[2]];
-            
-            CC3Vector tangent = CC3VectorDifference(attributes0.vertex, attributes1.vertex);
-            tangent = CC3VectorNormalize(tangent);
-            
-            vertexAttributes[indices[0]].tangent = tangent;
-            vertexAttributes[indices[1]].tangent = tangent;
-            vertexAttributes[indices[2]].tangent = tangent;
-        }
 
+        // Calculate consistent tangents. Method from:
+        // Lengyel, Eric. “Computing Tangent Space Basis Vectors for an Arbitrary Mesh”. Terathon Software 3D Graphics Library, 2001. http://www.terathon.com/code/tangent.html
+               
+        CC3Vector *tan1 = malloc(sizeof(CC3Vector) * vertexCount);
+        //CC3Vector *tan2 = tan1 + vertexCount;
+        memset(tan1, 0, sizeof(CC3Vector) * vertexCount);
         
+        for (long a = 0; a < elementIndexCount; a += 3) {
+            
+            long i1 = elementIndices[a + 0];
+            long i2 = elementIndices[a + 1];
+            long i3 = elementIndices[a + 2];
+            
+            CC3Vector v1 = vertexAttributes[i1].vertex;
+            CC3Vector v2 = vertexAttributes[i2].vertex;
+            CC3Vector v3 = vertexAttributes[i3].vertex;
+            
+            CC3Vector w1 = vertexAttributes[i1].texCoord;
+            CC3Vector w2 = vertexAttributes[i2].texCoord;
+            CC3Vector w3 = vertexAttributes[i3].texCoord;
+            
+            float x1 = v2.x - v1.x;
+            float x2 = v3.x - v1.x;
+            float y1 = v2.y - v1.y;
+            float y2 = v3.y - v1.y;
+            float z1 = v2.z - v1.z;
+            float z2 = v3.z - v1.z;
+            
+            float s1 = w2.x - w1.x;
+            float s2 = w3.x - w1.x;
+            float t1 = w2.y - w1.y;
+            float t2 = w3.y - w1.y;
+            
+            float r = 1.0f / (s1 * t2 - s2 * t1);
+            CC3Vector sdir = CC3VectorMake((t2 * x1 - t1 * x2) * r, (t2 * y1 - t1 * y2) * r,
+                          (t2 * z1 - t1 * z2) * r);
+            
+            tan1[i1] = CC3VectorAdd(tan1[i1], sdir);
+            tan1[i2] = CC3VectorAdd(tan1[i2], sdir);
+            tan1[i3] = CC3VectorAdd(tan1[i3], sdir);            
+        }
+        
+        for (long a = 0; a < vertexAttributeCount; a++) {
+            CC3Vector n = vertexAttributes[a].normal;
+            CC3Vector t = tan1[a];
+            
+            vertexAttributes[a].tangent = CC3VectorNormalize(CC3VectorDifference(t, CC3VectorScaleUniform(n,CC3VectorDot(n, t))));
+
+        }
+        
+        free(tan1);
+            
+
     } return self;
 }
 
