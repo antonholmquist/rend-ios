@@ -1,14 +1,13 @@
 //
 //  AppDelegate.m
-//  Rend Example Collection
+//  BumpMappingExample
 //
-//  Created by Anton Holmquist on 6/26/12.
-//  Copyright (c) 2012 Monterosa. All rights reserved.
+//  Created by Anton Holmberg on 2012-07-01.
+//  Copyright (c) 2012 Anton Holmberg. All rights reserved.
 //
 
-#import "AppDelegate.h"
-#import "GLViewController.h"
-#import "TeapotController.h"
+#import "BumpSphereAppDelegate.h"
+#import "SphereViewController.h"
 
 @implementation AppDelegate
 
@@ -20,19 +19,18 @@
     [super dealloc];
 }
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
-    EAGLContext *context = [[[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2] autorelease];
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    // Create OpenGL Context
+    EAGLContext *context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
     [EAGLContext setCurrentContext:context];
     
+    // Setup window
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
-    // Override point for customization after application launch.
-    
-    TeapotController *vc = [[[TeapotController alloc] init] autorelease];
-    self.window.rootViewController = vc;
-    
-    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.backgroundColor = [UIColor blackColor];
+    self.window.rootViewController = [[[SphereViewController alloc] init] autorelease];
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
