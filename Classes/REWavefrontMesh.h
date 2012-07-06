@@ -51,6 +51,7 @@ typedef struct REWavefrontVertexAttributes {
     CC3Vector vertex;
     CC3Vector texCoord;
     CC3Vector normal;
+    CC3Vector tangent;
 } REWavefrontVertexAttributes;
 
 
@@ -96,6 +97,7 @@ typedef struct REWavefrontVertexAttributes {
     
     // Buffers
     REBuffer *vertexAttributeBuffer, *elementIndexBuffer;
+    
 }
 
 
