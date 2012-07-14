@@ -33,9 +33,7 @@ typedef enum {
     kRECameraProjectionPerspective,
 } kRECameraProjection;
 
-/* RECamera
- *
- * Question: Should camera be a node? The camera itself doesn't need to have a camera, contentSize, z-value, etc...
+/** RECamera is defines the OpenGL camera properties.
  */
 
 @interface RECamera : RENode {
@@ -63,14 +61,24 @@ typedef enum {
     CC3Plane frustumRightPlane_;
 }
 
+/** Look direction of the camera */
 @property (nonatomic, assign) CC3Vector lookDirection;
+
+/** Up direction of the camera */
 @property (nonatomic, assign) CC3Vector upDirection;
+
+/** View frustum values */
 @property (nonatomic, assign) float frustumLeft, frustumRight, frustumBottom, frustumTop, frustumNear, frustumFar;
 
+/** The view matrix transforms from world space to eye space. It is calculated from position, lookDirection and upDirection. */
 @property (nonatomic, readonly) CC3GLMatrix *viewMatrix;
-@property (nonatomic, retain) CC3GLMatrix *projectionMatrix; // Can be set from outside. Changing the frustum matrix after this is undefined behavior
 
+/** The projection matrix transforms eye space to normal space. It is calculacted from the frustom values. */
+@property (nonatomic, retain) CC3GLMatrix *projectionMatrix; 
+
+/** Designated initializer. Select between perspective and orthographic projection. */
 - (id)initWithProjection:(kRECameraProjection)p;
+
 - (void)setOrientationWithHorizontalAngle:(float)horizontalAngle verticalAngle:(float)verticalAngle sideTiltAngle:(float)sideTiltAngle;
 
 // Returns the near field point
@@ -82,22 +90,8 @@ typedef enum {
 // If it's inside or intersects
 - (BOOL)boundingBoxIntersectsFrustum:(CC3BoundingBox)boundingBox; // Only reliable for orthographic projections for now
 
-// Cull test
+/** Simple cull test for bounding boxes */
 - (BOOL)globalBoundingBoxCanBeCulled:(CC3BoundingBox)globalBoundingBox;
 
 @end
 
-
-/*
--(void) populateToLookAt: (CC3Vector) targetLocation
-withEyeAt: (CC3Vector) eyeLocation
-withUp: (CC3Vector) upDirection;
-
--(void) populateFromFrustumLeft: (GLfloat) left
-andRight: (GLfloat) right
-andBottom: (GLfloat) bottom
-andTop: (GLfloat) top  
-andNear: (GLfloat) near
-andFar: (GLfloat) far;
-
-*/

@@ -34,29 +34,8 @@
 @class REAction;
 @class RERotator;
 
-/* RENode
- *
- * Question: Should node only be drawables? (And not cameras, lights, fog, etc).
- * They may not have enough things incommon, although it's still a pretty sweet pattern that all things exist in the world, so we'll leave that decision for later
- *
- * ACTIONS: The node doesn't know about it's actions. It just cares about it's properties. And the actions will set these.
- *
- * Transform. Order of which matrixes will be applied:
- * - Node:
- * Rotation
- * Scale
- * Translation
- * - Camera:
- * CameraEye
- * CameraProjection
- * -
- *
- * Coordinate systems: All internal data i RENode should be kept in model coordinates
- *
- *
- * GL STATES (INHERETENCY OR NOT?)
- *
- * All gl states are currently fetched from parent when it's added. It's kind of inherited, but not fully. It's saved lots of traversing and messaging to do it this way instead. This is comething to think about for the future.
+/** RENode is the main element that makes up the scene graph.
+ Nodes can contain children and may or may not be drawable.
  */
 
 @interface RENodeGLState : NSObject {
@@ -101,8 +80,6 @@
     BOOL isGlobalTransformMatrixDirty;
     BOOL isGlobalPositionDirty_; // Is dirty as soon as  global transform matrix is changed
     
-
-    
     BOOL hidden;
     NSNumber *alpha_;
     
@@ -131,41 +108,63 @@
     CC3GLMatrix *modelViewMatrix; // Most efficient to keep it here? 
 }
 
-@property (nonatomic, assign, readonly) RENode *parent; // Parent node.
-@property (nonatomic, readonly) REWorld *world; // Nearest parent that is world (Recursive)
-@property (nonatomic, retain) RECamera *camera; // Default to get camera from world.
+/** Parent node. This property is set automatically by the parent when adding a child. */
+@property (nonatomic, assign, readonly) RENode *parent;
 
+/** Camera. If camera property is set the getter returns that object. Defaults to inherit from parent. */
+@property (nonatomic, retain) RECamera *camera; 
+
+/** Nearest parent of type REWorld. This is useful since the world may contain lights affecting the node. May be nil. */
+@property (nonatomic, readonly) REWorld *world; 
+
+/** List of children. The children will be visited according to the order in which they appear in the array. */
 @property (nonatomic, readonly) NSArray *children;
 
+/** Program used for drawing. */
 @property (nonatomic, retain) REProgram *program; 
 
-@property (nonatomic, assign) int zOrder; // NOT SUPPORTED, MAYBE IN THE FUTURE?
+/** zOrder is currently not supported or implemented. */
+@property (nonatomic, assign) int zOrder;
 
-// These are the interface properties of translation, scale and rotation.
-@property (nonatomic, assign) CC3Vector position; // Sets translation
-@property (nonatomic, assign) CC3Vector size; // Affects scale according to MC bounding box
-@property (nonatomic, assign) CC3Vector scale; // Scal of MC coordinates
+/** Position of the node relative to it's parent. */
+@property (nonatomic, assign) CC3Vector position; 
 
-@property (nonatomic, assign) CC3Vector rotation; // Euler angles
-@property (nonatomic, assign) CC3Vector4 quaternion; // Quaternion
+/** Size of the node in world space. This effectively sets the scale value by calculating it according to the bounding box. If the bounding box is of zero size, setting this property results in undefined behavior. */
+@property (nonatomic, assign) CC3Vector size; 
+
+/** Scale determines the scale value from model space to world space. **/
+@property (nonatomic, assign) CC3Vector scale; 
+
+/** Euler angles rotation of the node from model space to world space. */
+@property (nonatomic, assign) CC3Vector rotation; 
+
+/** Quaternion rotation of the node from model space to world space. */
+@property (nonatomic, assign) CC3Vector4 quaternion; 
+
+/** Rotation axis of the node from model space to world space. */
 @property (nonatomic, assign) CC3Vector rotationAxis; // Rotation axis
-@property (nonatomic, assign) float rotationAngle; // Angle around rotation axis. I
 
+/** Rotation angle around rotationAxis of the node from model space to world space. */
+@property (nonatomic, assign) float rotationAngle;
+
+/** Bounding box in local model space. */
 @property (nonatomic, assign) CC3BoundingBox boundingBox;
-@property (nonatomic, readonly) CC3Vector boundingBoxSize; // Size of bounding box
 
-@property (nonatomic, readonly) CC3BoundingBox globalBoundingBox; // Slow to compute. Don't use too often. It isn't cached either.
+/** Bounding box size in local model space. Calculated lazily from boundingBox. */
+@property (nonatomic, readonly) CC3Vector boundingBoxSize; 
+
+/** Global bounding box in world space. Calculated on request by transforming bounding box corners according to the global transorm matrix. This may be slow to compute, and the result is not cached. **/
+@property (nonatomic, readonly) CC3BoundingBox globalBoundingBox; 
 
 @property (nonatomic, assign) CC3Vector anchorPoint; // Only defined if we have bounding box. When using animation and bounding box may change, it may not be appropiate to set this value. Set anchor coordinate instead.
 @property (nonatomic, assign) CC3Vector anchorCoordinate; // In model coordinates. default to (0,0,0)
 
-// transformMatrix is the local transform matrix. The global model matrix will be made of of transformMatrix, and parent transform matrix. Don't override this. Consider overriding globalTransformMatrix instead
+/** Transform matrix defines the full transform relative to it's parent. It's calculated from position, scale and rotation properties once per draw cycle. */
 @property (nonatomic, readonly) CC3GLMatrix *transformMatrix; 
 
 // The globalTransformMatrix is the matrix that will be the modelMatrix when drawing. It is made up of parent global transform matrix and own transformMatrix. Override this to for instance make drawing not respect parents.  Invalidated on each visit. Depends on self's transform matrix and parents matrix. 
 @property (nonatomic, readonly) CC3GLMatrix *globalTransformMatrix; 
 @property (nonatomic, readonly) CC3Vector globalPosition; // Position in world
-
 
 
 @property (nonatomic, assign) BOOL hidden; // Will also hide subnodes
@@ -192,14 +191,6 @@
 @property (nonatomic, assign) GLfloat positionY; // Convinient setter/getter for position.y
 @property (nonatomic, assign) GLfloat positionZ; // Convinient setter/getter for position.z
 
-/*
-
-// These matrices are used for drawing. They can be overrided if neccessary. For instance, REBillboard with certain mode
-// in our implementation wants to set view matrix to identify, and to clever stuff with model matrix.
-- (CC3GLMatrix*)modelMatrix;
-- (CC3GLMatrix*)viewMatrix;
-- (CC3GLMatrix*)projectionMatrix;
- */
 
 + (REProgram*)program; // The program of the node. Check of what it defaults to
 + (id)node; // Convenience
@@ -224,11 +215,6 @@
 - (BOOL)willDraw;
 
 - (BOOL)shouldCullTest; // If we should run cull test to discard object. Good for meshes but may not be very good for sprites and other simple geometry. Default is NO
-
-// Action handling
-- (void)runAction:(REAction*)action;
-- (void)stopAllActions;
-- (void)stopAction:(REAction*)action;
 
 // Closest point where ray collides. If no collision, returns kCC3VectorZero. Ray should be given in global/world coordinates.
 - (NSValue*)boundingBoxIntersectionForRay:(CC3Ray)worldRay;
