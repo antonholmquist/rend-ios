@@ -28,6 +28,7 @@
 #import "REWavefrontMeshGroupNode.h"
 #import "REWavefrontMeshElementIndexBatch.h"
 #import "REWavefrontMesh.h"
+#import "REVertexArrayObject.h"
 
 @implementation REWavefrontMeshNode
 

@@ -30,11 +30,11 @@
 
 // An element component is indexes for (v/vt/vn) together with groups
 @interface REWavefrontElementComponent : NSObject {
-    NSArray *attributeIndexes; // (123/4231/324)
+    NSString *attributeIndexes; // (123/4231/324)
     NSArray *groups, *smoothingGroups, *mergingGroups;
 } 
 
-@property (nonatomic, retain) NSArray *attributeIndexes;
+@property (nonatomic, retain) NSString *attributeIndexes;
 @property (nonatomic, retain) NSArray *groups, *smoothingGroups, *mergingGroups;
 
 @end
@@ -462,7 +462,7 @@
             
             
             REWavefrontElementComponent *elementComponent = [elementComponents objectAtIndex:i];
-            NSArray *attributeIndexes = elementComponent.attributeIndexes;
+            NSString *attributeIndexes = elementComponent.attributeIndexes;
             NSNumber *elementIndex = [elementIndicesByAttributeIndexes objectForKey:attributeIndexes]; // Value   
             
             elementIndices[i] = [elementIndex intValue];
@@ -487,7 +487,7 @@
             
             REWavefrontElementComponent *elementComponent = [elementComponents objectAtIndex:i];
             
-            NSArray *attributeIndexes = elementComponent.attributeIndexes;
+            NSString *attributeIndexes = elementComponent.attributeIndexes;
             NSNumber *elementIndex = [elementIndicesByAttributeIndexes objectForKey:attributeIndexes]; // Value
             
             REWavefrontVertexAttributes attributes = vertexAttributes[[elementIndex intValue]];

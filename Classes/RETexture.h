@@ -82,7 +82,6 @@
 // This method uses cache.
 //- (id)initWithImageNamed:(NSString*)filename; // NOT YET IMPLEMENTED
 
-- (id)initOnTexture:(GLint)texture;
 - (id)initWithImage:(UIImage*)image;
 - (id)initWithImageBuffer:(CVImageBufferRef)imageBuffer;
 - (id)initWithPVRData:(NSData *)pvrData;

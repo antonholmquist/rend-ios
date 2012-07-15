@@ -32,7 +32,6 @@
 @interface RESprite ()
 
 - (void)updateTexCoords;
-- (void)updateProgram;
 
 @end
 

@@ -63,8 +63,8 @@
     }
 }
 
-- (void)tick:(float)dt {
-    for (id target in [[updateTargets copy] autorelease]) { // WARNING! May be inefficient to copy!
+- (void)tick:(double)dt {
+    for (id <RESchedulerTarget> target in [[updateTargets copy] autorelease]) { // WARNING! May be inefficient to copy!
         [target update:dt];
     }
 }

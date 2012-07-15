@@ -223,7 +223,7 @@
 - (NSValue*)boundingBoxIntersectionForRay:(CC3Ray)worldRay;
 
 /** Nearest child whose bounding box intersects given ray. Point is return value. */
-- (RENode*)childIntersectingRay:(CC3Ray)ray hitPoint:(CC3Vector4*)hitPoint; .
+- (RENode*)childIntersectingRay:(CC3Ray)ray hitPoint:(CC3Vector4*)hitPoint; 
 
 /** Invalutes global transform matrix. This is done once per draw cycle. */
 - (void)invalidateGlobalTransformMatrix;
