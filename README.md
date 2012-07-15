@@ -17,16 +17,16 @@ The full story can be found in [this blog post](http://antonholmquist.com/blog/i
 
 Example usage
 --------------------
-The first thing to do is to create a view where we can draw our content:
+The first thing to do is to create a view where we can draw our content.
 
     REGLView *view = [[REGLView alloc] initWithFrame:CGRectMake(0, 0, 320, 320)];
     
 
-Next, we create a scene which acts as a root node in our scene graph hierarchy:
+Next, we create a scene that acts as a root node in our scene graph hierarchy. All content should be added as children to this node.
 
     REScene *scene = [[REScene alloc] init];
 
-Next, we create a director that is responsible for managing drawing and connects the view and the scene:
+Next, we create a director that is responsible for managing drawing and connecting the view and scene:
 
     REDirector *director = [[REDirector alloc] init];
     director.view = view;
@@ -58,4 +58,4 @@ Now everything is set up. The only thing left is to make the director run.
 
     director.running = YES;
     
-So that's a very basic example on how to draw a sprite. There are more advanced examples provided with the project.
+So that's a very basic example on how to draw a sprite. There are some more advanced examples provided with the repository.
