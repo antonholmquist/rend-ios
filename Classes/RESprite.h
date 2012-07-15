@@ -36,11 +36,11 @@ typedef struct RESpriteAttribs {
     CC3Vector texCoord;
 } RESpriteAttribs;
 
-/* RESprite
+/* RESprite is a node with a texture.
  
- Creates sprite in x,y-plane.
+ Local content is defined along x,y-plane
  
- 1. First clips to textureContentFrame
+ 1 First clips to textureContentFrame
  2. Then flips/rotates
  */
  
@@ -70,23 +70,30 @@ typedef struct RESpriteAttribs {
     
 }
 
-@property (nonatomic, assign) RESpriteBatchNode *batchNode;
+/** The texture used for drawing */
+@property (nonatomic, retain) RETexture2D *texture; 
+
+/** The content frame that is used for drawing. Defaults to CGRectZero, which means use entire texture. */
+@property (nonatomic, assign) CGRect textureContentFrame; 
+
+/** Defines whether texture should be flipped. Defaults to NO. */
+@property (nonatomic, assign) BOOL textureFlipX, textureFlipY;
+
+/** Defines whether texture should be rotated. Defaults to 0. */
+@property (nonatomic, assign) float textureRotationAngle;
 
 // Is alpha premultiplied in texture. It's better to premultiply when saving the texture, than doing it here.
 // Saving with alpha premultipled can be done with pvr-textures with PVRTexTool.
 @property (nonatomic, assign) BOOL alphaPremultipled; 
 
-@property (nonatomic, retain) RETexture2D *texture; 
+
 @property (nonatomic, assign) CGRect frame; // Undefined if rotation is set.
-
-@property (nonatomic, assign) CGRect textureContentFrame; // Default to CGRectZero, which means use entire texture
-
-@property (nonatomic, assign) BOOL textureFlipX, textureFlipY;
-@property (nonatomic, assign) float textureRotationAngle;
 
 @property (nonatomic, assign) CC3Vector4 multiplyColor;
 
 @property (nonatomic, readonly) RESpriteAttribs *attribs; // To be used for batch node and maybe others. Will be of length 4.
+
+@property (nonatomic, assign) RESpriteBatchNode *batchNode;
 
 
 

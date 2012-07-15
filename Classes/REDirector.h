@@ -27,9 +27,9 @@
 @class REScene;
 @class REGLView;
 
-// WARNING!
-// USES SHARED SCHEDULER.
-
+/** REDirector manages draw cycles. It's responsible for preparing the view for drawing, traversing the node hierarchy and presenting the renderbuffer. 
+ */
+ 
 
 @interface REDirector : NSObject {
     CADisplayLink *displayLink;
@@ -54,18 +54,30 @@
     BOOL isAppInBackground; // Keep track of that the app has entered background to prevent drawing.
 }
 
+/** The view we want to use for drawing. */
 @property (nonatomic, retain) REGLView *view;
+
+/** The scene which acts as the root node of the scene grahp hierarchy. */
 @property (nonatomic, retain) REScene *scene;
+
+/** When running is set to YES, drawing will be done regurarly according to frameInterval. */
 @property (nonatomic, assign) BOOL running;
+
+/** Default to 2 which means 30 frame per second. */
 @property (nonatomic, assign) NSUInteger frameInterval;
 
+/** showFPS is not implemented. */
 @property (nonatomic, assign) BOOL showFPS;
+
+/** The run loop mode of the display link. */
 @property (nonatomic, retain) NSString *displayLinkRunLoopMode;
 
 @property (nonatomic, readonly) float dt;
 
+/** Draws the content of scene to the view. */
 - (void)draw;
-- (void)presentRenderbuffer;
-- (void)drawWithoutPresentation;
+
+/** Returns snapshot of view content. */
 - (UIImage*)snapshot;
+
 @end

@@ -51,6 +51,7 @@
 
 @property (nonatomic, readonly) GLuint program;
 
+/** This is the preferred way to return a program in the node program static method. The returned program is cached. */
 + (REProgram*)programWithVertexFilename:(NSString*)vertexFilename fragmentFilename:(NSString*)fragmentFilename;
 
 - (id)initWithVertexShader:(REShader*)vertexShader fragmentShader:(REShader*)fragmentShader;

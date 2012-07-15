@@ -48,6 +48,8 @@
 
 - (void)updateDisplayLink;
 
+
+
 @end
 
 
@@ -115,6 +117,9 @@ static int REDirectorNumberOfRunningDirectors = 0;
 - (void)applicationDidBecomeActive:(NSNotification*)n;
 - (void)applicationDidEnterBackground:(NSNotification*)n;
 - (void)applicationWillResignActive:(NSNotification*)n;
+
+- (void)presentRenderbuffer;
+- (void)drawWithoutPresentation;
 
 @end
 

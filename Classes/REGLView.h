@@ -45,12 +45,14 @@
     BOOL multisampling_;
 }
 
+/** The framebuffer associated with the view */
 @property (nonatomic, readonly) GLuint framebuffer; 
-@property (nonatomic, readonly) GLuint colorRenderbuffer;
-//@property (nonatomic, readonly) GLuint stencilRenderBuffer;
-//@property (nonatomic, readonly) GLuint depthStencilRenderbuffer;
 
+/** If multisampling is used, this is the framebuffer associated with the view */
 @property (nonatomic, readonly) GLuint multisampleFramebuffer; // Used for multisampling
+
+/** The color renderbuffer associated with the view */
+@property (nonatomic, readonly) GLuint colorRenderbuffer;
 
 @property (nonatomic, readonly) CGRect viewport;
 @property (nonatomic, readonly) BOOL multisampling;

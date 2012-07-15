@@ -46,6 +46,9 @@
 // Helper function to set state. "State" is instance variable.
 - (void)setState:(RENodeGLState*)state value:(id)value;
 
+/** Remove a child from the node hierarchy. */
+- (void)removeChild:(RENode*)node;
+
 @end
 
 @implementation RENode

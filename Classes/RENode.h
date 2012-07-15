@@ -33,24 +33,13 @@
 @class RECamera;
 @class REAction;
 @class RERotator;
+@class RENodeGLState;
 
 /** RENode is the main element that makes up the scene graph.
  Nodes can contain children and may or may not be drawable.
+ 
+ Subclasses: RECamera, RESprite, etc.
  */
-
-@interface RENodeGLState : NSObject {
-    id state_;
-    id parentState_;
-    BOOL isParentStateDirty_;
-}
-
-@property (nonatomic, retain) id state; // State of self. Like [NSNumber numberWithBool:YES] for blendEnabled.
-@property (nonatomic, retain) id parentState; // Parent's state.
-@property (nonatomic, readonly) BOOL isParentStateDirty;
-
-- (void)invalidateParentState;
-
-@end
 
 @interface RENode : NSObject {
     RENode *parent_; // weakref
@@ -129,22 +118,25 @@
 /** Position of the node relative to it's parent. */
 @property (nonatomic, assign) CC3Vector position; 
 
+/** Convenitent accessors for position.x/y/z */
+@property (nonatomic, assign) GLfloat positionX, positionY, positionZ;
+
 /** Size of the node in world space. This effectively sets the scale value by calculating it according to the bounding box. If the bounding box is of zero size, setting this property results in undefined behavior. */
 @property (nonatomic, assign) CC3Vector size; 
 
-/** Scale determines the scale value from model space to world space. **/
+/** Scale determines the scale value relative to its parent and size in model space. */
 @property (nonatomic, assign) CC3Vector scale; 
 
-/** Euler angles rotation of the node from model space to world space. */
+/** Euler angles rotation of the node relative to its parent */
 @property (nonatomic, assign) CC3Vector rotation; 
 
-/** Quaternion rotation of the node from model space to world space. */
+/** Quaternion rotation of the node relative to its parent. */
 @property (nonatomic, assign) CC3Vector4 quaternion; 
 
-/** Rotation axis of the node from model space to world space. */
+/** Rotation axis of the node relative to its parent */
 @property (nonatomic, assign) CC3Vector rotationAxis; // Rotation axis
 
-/** Rotation angle around rotationAxis of the node from model space to world space. */
+/** Rotation angle around rotationAxis of the node relative to its parent */
 @property (nonatomic, assign) float rotationAngle;
 
 /** Bounding box in local model space. */
@@ -153,22 +145,31 @@
 /** Bounding box size in local model space. Calculated lazily from boundingBox. */
 @property (nonatomic, readonly) CC3Vector boundingBoxSize; 
 
-/** Global bounding box in world space. Calculated on request by transforming bounding box corners according to the global transorm matrix. This may be slow to compute, and the result is not cached. **/
+/** Global bounding box in world space. Calculated on request by transforming bounding box corners according to the global transorm matrix. This may be slow to compute, and the result is not cached. */
 @property (nonatomic, readonly) CC3BoundingBox globalBoundingBox; 
 
-@property (nonatomic, assign) CC3Vector anchorPoint; // Only defined if we have bounding box. When using animation and bounding box may change, it may not be appropiate to set this value. Set anchor coordinate instead.
+/** Anchor coordinate defines the coordinate in model space around which translation, scale and rotation is made */
 @property (nonatomic, assign) CC3Vector anchorCoordinate; // In model coordinates. default to (0,0,0)
+
+/** Anchor point is a conveniece method for setting anchor coordinate relative to bounding box. If bounding box is zero, setting this property results in undefined behaviour. */
+@property (nonatomic, assign) CC3Vector anchorPoint; 
 
 /** Transform matrix defines the full transform relative to it's parent. It's calculated from position, scale and rotation properties once per draw cycle. */
 @property (nonatomic, readonly) CC3GLMatrix *transformMatrix; 
 
-// The globalTransformMatrix is the matrix that will be the modelMatrix when drawing. It is made up of parent global transform matrix and own transformMatrix. Override this to for instance make drawing not respect parents.  Invalidated on each visit. Depends on self's transform matrix and parents matrix. 
+/** The global transform matrix defines the entire transform hierarchy from model to world space. It's created by traversing the node hierarchy and multiplying the ancestor nodes' transform matrices. Invalidated and re-calculated on each visit. */
 @property (nonatomic, readonly) CC3GLMatrix *globalTransformMatrix; 
-@property (nonatomic, readonly) CC3Vector globalPosition; // Position in world
 
+/** Global position in the world. Calculated by transforming the position property according to the global transform matrix. Calculated on each call and is not cached, so this method may be expensive */
+@property (nonatomic, readonly) CC3Vector globalPosition; 
 
-@property (nonatomic, assign) BOOL hidden; // Will also hide subnodes
-@property (nonatomic, readonly) BOOL isAncestorHidden; // If self or any ancestor is hidden
+/** If hidden, the node is not visited */
+@property (nonatomic, assign) BOOL hidden;
+
+/** Returns YES if node or any ancestor node is hidden. NOTE: Not sure if this method is really needed. */
+@property (nonatomic, readonly) BOOL isAncestorHidden; 
+
+/** Alpha value [0,1] of the node. It's up to the drawing method to respect this. */
 @property (nonatomic, retain) NSNumber *alpha;
 
 // If set to nil, inherit from parent. (Default is inherit or YES)
@@ -184,44 +185,62 @@
 @property (nonatomic, retain) NSValue *stencilFunc;
 @property (nonatomic, assign) NSValue *stencilOp;
 
-@property (nonatomic, retain) NSNumber *clearsStencilBuffer; // If YES, clears stencil buffer before draw. Default is NO.
+/** If YES, clears stencil buffer before draw. Default is NO. **/
+@property (nonatomic, retain) NSNumber *clearsStencilBuffer; 
 
 
-@property (nonatomic, assign) GLfloat positionX; // Convinient setter/getter for position.x
-@property (nonatomic, assign) GLfloat positionY; // Convinient setter/getter for position.y
-@property (nonatomic, assign) GLfloat positionZ; // Convinient setter/getter for position.z
+/** Convenieve method */
++ (id)node; 
 
+/** The shader program of this node, may be nil. A node should use only one program for drawing, if you need multiple programs, consider separariting them into separate node subclasses. Use [REProgram programWithVertexFilename:fragmentFilename:] to create the program since it caches the result.  */
++ (REProgram*)program;
 
-+ (REProgram*)program; // The program of the node. Check of what it defaults to
-+ (id)node; // Convenience
-
+/** The node is visited once each frame. This method sets the defined GL state as well as the current shader program. */
 - (void)visit; 
+
+/** If the node contains a program, this method should be overridden by subclasses to perform any drawing using this program. The GL state defined like blendEnabled, blendFunc, cullFace, etc are already set here. */
 - (void)draw;
 
+/** Sets a uniform size based on x value. Should be renamed by setSizeUniformX:. */
 - (void)setSizeX:(float)x;
 
+/** Add a child to the node hierarchy. */
 - (void)addChild:(RENode*)node;
-- (void)removeChild:(RENode*)node;
-//- (void)insertChild:(RENode*)node aboveChild:(RENode*)aboveNode;
-//- (void)insertChild:(RENode*)node belowChild:(RENode*)belowChild;
 
-// Called after reciever was moved to new parent node.
-- (void)didMoveToParent:(RENode*)parentNode;
-
-// Will trigger removeChild of parentNode
+/** Will trigger removeChild of parentNode '*/
 - (void)removeFromParentNode;
 
-// Default to YES if we have program. This will cause GL states that affects drawing to be changed, which should be correct most times. In some cases, there may be reason to override this, for instance, RESprite may want to return NO if it belongs to a spriteBatchNode to avoid uncessesary extra state traversing for potenatially many objects.
+/** Called after reciever was moved to new parent node. */
+- (void)didMoveToParent:(RENode*)parentNode;
+
+/** Default to YES if we have program. This will cause GL states that affects drawing to be changed, which should be correct most times. In some cases, there may be reason to override this, for instance, RESprite may want to return NO if it belongs to a spriteBatchNode to avoid uncessesary extra state traversing for potenatially many objects. */
 - (BOOL)willDraw;
 
-- (BOOL)shouldCullTest; // If we should run cull test to discard object. Good for meshes but may not be very good for sprites and other simple geometry. Default is NO
+/** Defines whether we should run cull test to discard object. Good for meshes but may not be very good for sprites and other simple geometry. Default is NO. */
+- (BOOL)shouldCullTest; 
 
-// Closest point where ray collides. If no collision, returns kCC3VectorZero. Ray should be given in global/world coordinates.
+/** Closest point where given ray collides with the nodes bounding box in global coordinates. If no collision, returns kCC3VectorZero/nil. Ray should be given in global world coordinates. */
 - (NSValue*)boundingBoxIntersectionForRay:(CC3Ray)worldRay;
 
-// Use this when
-- (RENode*)childIntersectingRay:(CC3Ray)ray hitPoint:(CC3Vector4*)hitPoint; // Nearest child whose bounding box intersects ray. Point is return value.
-- (void)invalidateGlobalTransformMatrix; // Force initial step?; // Will also invalidate global bounding box, since it's based on global transform matrix
+/** Nearest child whose bounding box intersects given ray. Point is return value. */
+- (RENode*)childIntersectingRay:(CC3Ray)ray hitPoint:(CC3Vector4*)hitPoint; .
 
+/** Invalutes global transform matrix. This is done once per draw cycle. */
+- (void)invalidateGlobalTransformMatrix;
+
+@end
+
+
+@interface RENodeGLState : NSObject {
+    id state_;
+    id parentState_;
+    BOOL isParentStateDirty_;
+}
+
+@property (nonatomic, retain) id state; // State of self. Like [NSNumber numberWithBool:YES] for blendEnabled.
+@property (nonatomic, retain) id parentState; // Parent's state.
+@property (nonatomic, readonly) BOOL isParentStateDirty;
+
+- (void)invalidateParentState;
 
 @end

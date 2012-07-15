@@ -26,6 +26,11 @@
 
 #import "RENode.h"
 
+/** REScene
+ 
+ Scenes are used as base nodes by REDirector. 
+ */
+
 
 @interface REScene : RENode {
     
