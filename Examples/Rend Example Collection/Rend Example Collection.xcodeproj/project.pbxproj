@@ -28,85 +28,10 @@
 		3A1D0CF615A70BB2003BAC0F /* sFragmentLighting.vsh in Resources */ = {isa = PBXBuildFile; fileRef = B25D2E5D1599CF4A004CA9DE /* sFragmentLighting.vsh */; };
 		3A1D0CFE15A70BE0003BAC0F /* sBumpSphere.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 3A1237A915A706A500E404EA /* sBumpSphere.fsh */; };
 		3A1D0CFF15A70BE2003BAC0F /* sBumpSphere.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 3A1237AA15A706A500E404EA /* sBumpSphere.vsh */; };
-		3A1D0D0015A70BF4003BAC0F /* BumpSphereAppDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 3A1237AD15A706B200E404EA /* BumpSphereAppDelegate.h */; };
 		3A1D0D0115A70BF6003BAC0F /* BumpSphereAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1237AE15A706B200E404EA /* BumpSphereAppDelegate.m */; };
-		3A1D0D0215A70BF8003BAC0F /* SphereViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 3A1237B015A7070C00E404EA /* SphereViewController.h */; };
 		3A1D0D0315A70BFA003BAC0F /* SphereViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1237B115A7070C00E404EA /* SphereViewController.m */; };
-		3A1D0D0415A70BFB003BAC0F /* SphereNode.h in Sources */ = {isa = PBXBuildFile; fileRef = 3A1237B515A7071700E404EA /* SphereNode.h */; };
 		3A1D0D0515A70BFD003BAC0F /* SphereNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1237B615A7071700E404EA /* SphereNode.m */; };
 		3A1D0D0615A70C05003BAC0F /* SphereViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A1237B215A7070C00E404EA /* SphereViewController.xib */; };
-		3A5564D715A70E7D005B03F4 /* CC3Foundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A55649415A70E7D005B03F4 /* CC3Foundation.m */; };
-		3A5564D815A70E7D005B03F4 /* CC3Foundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A55649415A70E7D005B03F4 /* CC3Foundation.m */; };
-		3A5564D915A70E7D005B03F4 /* CC3GLMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A55649615A70E7D005B03F4 /* CC3GLMatrix.m */; };
-		3A5564DA15A70E7D005B03F4 /* CC3GLMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A55649615A70E7D005B03F4 /* CC3GLMatrix.m */; };
-		3A5564DB15A70E7D005B03F4 /* CC3Kazmath.c in Sources */ = {isa = PBXBuildFile; fileRef = 3A55649715A70E7D005B03F4 /* CC3Kazmath.c */; };
-		3A5564DC15A70E7D005B03F4 /* CC3Kazmath.c in Sources */ = {isa = PBXBuildFile; fileRef = 3A55649715A70E7D005B03F4 /* CC3Kazmath.c */; };
-		3A5564DD15A70E7D005B03F4 /* CC3Math.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A55649B15A70E7D005B03F4 /* CC3Math.m */; };
-		3A5564DE15A70E7D005B03F4 /* CC3Math.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A55649B15A70E7D005B03F4 /* CC3Math.m */; };
-		3A5564DF15A70E7D005B03F4 /* NSValue+CC3Types.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A55649F15A70E7D005B03F4 /* NSValue+CC3Types.m */; };
-		3A5564E015A70E7D005B03F4 /* NSValue+CC3Types.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A55649F15A70E7D005B03F4 /* NSValue+CC3Types.m */; };
-		3A5564E115A70E7D005B03F4 /* REBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564A115A70E7D005B03F4 /* REBuffer.m */; };
-		3A5564E215A70E7D005B03F4 /* REBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564A115A70E7D005B03F4 /* REBuffer.m */; };
-		3A5564E315A70E7D005B03F4 /* RECache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564A315A70E7D005B03F4 /* RECache.m */; };
-		3A5564E415A70E7D005B03F4 /* RECache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564A315A70E7D005B03F4 /* RECache.m */; };
-		3A5564E515A70E7D005B03F4 /* RECamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564A515A70E7D005B03F4 /* RECamera.m */; };
-		3A5564E615A70E7D005B03F4 /* RECamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564A515A70E7D005B03F4 /* RECamera.m */; };
-		3A5564E715A70E7D005B03F4 /* REDirector.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564A715A70E7D005B03F4 /* REDirector.m */; };
-		3A5564E815A70E7D005B03F4 /* REDirector.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564A715A70E7D005B03F4 /* REDirector.m */; };
-		3A5564E915A70E7D005B03F4 /* REGLStateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564A915A70E7D005B03F4 /* REGLStateManager.m */; };
-		3A5564EA15A70E7D005B03F4 /* REGLStateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564A915A70E7D005B03F4 /* REGLStateManager.m */; };
-		3A5564EB15A70E7D005B03F4 /* REGLTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564AB15A70E7D005B03F4 /* REGLTypes.m */; };
-		3A5564EC15A70E7D005B03F4 /* REGLTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564AB15A70E7D005B03F4 /* REGLTypes.m */; };
-		3A5564ED15A70E7D005B03F4 /* REGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564AD15A70E7D005B03F4 /* REGLView.m */; };
-		3A5564EE15A70E7D005B03F4 /* REGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564AD15A70E7D005B03F4 /* REGLView.m */; };
-		3A5564EF15A70E7D005B03F4 /* REKeyframedMeshNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564AF15A70E7D005B03F4 /* REKeyframedMeshNode.m */; };
-		3A5564F015A70E7D005B03F4 /* REKeyframedMeshNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564AF15A70E7D005B03F4 /* REKeyframedMeshNode.m */; };
-		3A5564F115A70E7D005B03F4 /* RELight.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564B115A70E7D005B03F4 /* RELight.m */; };
-		3A5564F215A70E7D005B03F4 /* RELight.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564B115A70E7D005B03F4 /* RELight.m */; };
-		3A5564F315A70E7D005B03F4 /* REMaterial.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564B315A70E7D005B03F4 /* REMaterial.m */; };
-		3A5564F415A70E7D005B03F4 /* REMaterial.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564B315A70E7D005B03F4 /* REMaterial.m */; };
-		3A5564F515A70E7D005B03F4 /* RENode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564B615A70E7D005B03F4 /* RENode.m */; };
-		3A5564F615A70E7D005B03F4 /* RENode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564B615A70E7D005B03F4 /* RENode.m */; };
-		3A5564F715A70E7D005B03F4 /* RENSArrayAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564B815A70E7D005B03F4 /* RENSArrayAdditions.m */; };
-		3A5564F815A70E7D005B03F4 /* RENSArrayAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564B815A70E7D005B03F4 /* RENSArrayAdditions.m */; };
-		3A5564F915A70E7D005B03F4 /* RENSValueAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564BA15A70E7D005B03F4 /* RENSValueAdditions.m */; };
-		3A5564FA15A70E7D005B03F4 /* RENSValueAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564BA15A70E7D005B03F4 /* RENSValueAdditions.m */; };
-		3A5564FB15A70E7D005B03F4 /* REProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564BC15A70E7D005B03F4 /* REProgram.m */; };
-		3A5564FC15A70E7D005B03F4 /* REProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564BC15A70E7D005B03F4 /* REProgram.m */; };
-		3A5564FD15A70E7D005B03F4 /* RERotator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564BE15A70E7D005B03F4 /* RERotator.m */; };
-		3A5564FE15A70E7D005B03F4 /* RERotator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564BE15A70E7D005B03F4 /* RERotator.m */; };
-		3A5564FF15A70E7D005B03F4 /* REScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564C015A70E7D005B03F4 /* REScene.m */; };
-		3A55650015A70E7D005B03F4 /* REScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564C015A70E7D005B03F4 /* REScene.m */; };
-		3A55650115A70E7D005B03F4 /* REScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564C215A70E7D005B03F4 /* REScheduler.m */; };
-		3A55650215A70E7D005B03F4 /* REScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564C215A70E7D005B03F4 /* REScheduler.m */; };
-		3A55650315A70E7D005B03F4 /* REShader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564C415A70E7D005B03F4 /* REShader.m */; };
-		3A55650415A70E7D005B03F4 /* REShader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564C415A70E7D005B03F4 /* REShader.m */; };
-		3A55650515A70E7D005B03F4 /* RESprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564C615A70E7D005B03F4 /* RESprite.m */; };
-		3A55650615A70E7D005B03F4 /* RESprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564C615A70E7D005B03F4 /* RESprite.m */; };
-		3A55650715A70E7D005B03F4 /* RESpriteBatchNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564C815A70E7D005B03F4 /* RESpriteBatchNode.m */; };
-		3A55650815A70E7D005B03F4 /* RESpriteBatchNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564C815A70E7D005B03F4 /* RESpriteBatchNode.m */; };
-		3A55650915A70E7D005B03F4 /* RETexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564CA15A70E7D005B03F4 /* RETexture.m */; };
-		3A55650A15A70E7D005B03F4 /* RETexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564CA15A70E7D005B03F4 /* RETexture.m */; };
-		3A55650B15A70E7D005B03F4 /* REVertexArrayObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564CC15A70E7D005B03F4 /* REVertexArrayObject.m */; };
-		3A55650C15A70E7D005B03F4 /* REVertexArrayObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564CC15A70E7D005B03F4 /* REVertexArrayObject.m */; };
-		3A55650D15A70E7D005B03F4 /* REWavefrontMesh.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564CE15A70E7D005B03F4 /* REWavefrontMesh.m */; };
-		3A55650E15A70E7D005B03F4 /* REWavefrontMesh.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564CE15A70E7D005B03F4 /* REWavefrontMesh.m */; };
-		3A55650F15A70E7D005B03F4 /* REWavefrontMeshElementIndexBatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564D015A70E7D005B03F4 /* REWavefrontMeshElementIndexBatch.m */; };
-		3A55651015A70E7D005B03F4 /* REWavefrontMeshElementIndexBatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564D015A70E7D005B03F4 /* REWavefrontMeshElementIndexBatch.m */; };
-		3A55651115A70E7D005B03F4 /* REWavefrontMeshGroupNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564D215A70E7D005B03F4 /* REWavefrontMeshGroupNode.m */; };
-		3A55651215A70E7D005B03F4 /* REWavefrontMeshGroupNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564D215A70E7D005B03F4 /* REWavefrontMeshGroupNode.m */; };
-		3A55651315A70E7D005B03F4 /* REWavefrontMeshNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564D415A70E7D005B03F4 /* REWavefrontMeshNode.m */; };
-		3A55651415A70E7D005B03F4 /* REWavefrontMeshNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564D415A70E7D005B03F4 /* REWavefrontMeshNode.m */; };
-		3A55651515A70E7D005B03F4 /* REWorld.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564D615A70E7D005B03F4 /* REWorld.m */; };
-		3A55651615A70E7D005B03F4 /* REWorld.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5564D615A70E7D005B03F4 /* REWorld.m */; };
-		3A55651C15A70E8B005B03F4 /* sRESprite.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 3A55651815A70E8B005B03F4 /* sRESprite.fsh */; };
-		3A55651D15A70E8B005B03F4 /* sRESprite.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 3A55651815A70E8B005B03F4 /* sRESprite.fsh */; };
-		3A55651E15A70E8B005B03F4 /* sRESprite.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 3A55651915A70E8B005B03F4 /* sRESprite.vsh */; };
-		3A55651F15A70E8B005B03F4 /* sRESprite.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 3A55651915A70E8B005B03F4 /* sRESprite.vsh */; };
-		3A55652015A70E8B005B03F4 /* sRESpriteBatch.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 3A55651A15A70E8B005B03F4 /* sRESpriteBatch.fsh */; };
-		3A55652115A70E8B005B03F4 /* sRESpriteBatch.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 3A55651A15A70E8B005B03F4 /* sRESpriteBatch.fsh */; };
-		3A55652215A70E8B005B03F4 /* sRESpriteBatch.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 3A55651B15A70E8B005B03F4 /* sRESpriteBatch.vsh */; };
-		3A55652315A70E8B005B03F4 /* sRESpriteBatch.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 3A55651B15A70E8B005B03F4 /* sRESpriteBatch.vsh */; };
 		B25D2E601599CF62004CA9DE /* sFragmentLighting.fsh in Resources */ = {isa = PBXBuildFile; fileRef = B25D2E5C1599CF4A004CA9DE /* sFragmentLighting.fsh */; };
 		B25D2E611599CF62004CA9DE /* sFragmentLighting.vsh in Resources */ = {isa = PBXBuildFile; fileRef = B25D2E5D1599CF4A004CA9DE /* sFragmentLighting.vsh */; };
 		B25D2E631599D497004CA9DE /* teapot.mtl in Resources */ = {isa = PBXBuildFile; fileRef = B25D2E621599D497004CA9DE /* teapot.mtl */; };
@@ -125,6 +50,78 @@
 		B25D3D7D159928F200428A79 /* TeapotNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B25D3D7C159928F200428A79 /* TeapotNode.m */; };
 		B25D3D8415992B5900428A79 /* sVertexLighting.fsh in Resources */ = {isa = PBXBuildFile; fileRef = B25D3D8215992B4D00428A79 /* sVertexLighting.fsh */; };
 		B25D3D8515992B5900428A79 /* sVertexLighting.vsh in Resources */ = {isa = PBXBuildFile; fileRef = B25D3D8315992B4D00428A79 /* sVertexLighting.vsh */; };
+		B2FF34C615B2AD77001185F4 /* CC3Foundation.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF348315B2AD77001185F4 /* CC3Foundation.m */; };
+		B2FF34C715B2AD77001185F4 /* CC3Foundation.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF348315B2AD77001185F4 /* CC3Foundation.m */; };
+		B2FF34C815B2AD77001185F4 /* CC3GLMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF348515B2AD77001185F4 /* CC3GLMatrix.m */; };
+		B2FF34C915B2AD77001185F4 /* CC3GLMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF348515B2AD77001185F4 /* CC3GLMatrix.m */; };
+		B2FF34CA15B2AD77001185F4 /* CC3Kazmath.c in Sources */ = {isa = PBXBuildFile; fileRef = B2FF348615B2AD77001185F4 /* CC3Kazmath.c */; };
+		B2FF34CB15B2AD77001185F4 /* CC3Kazmath.c in Sources */ = {isa = PBXBuildFile; fileRef = B2FF348615B2AD77001185F4 /* CC3Kazmath.c */; };
+		B2FF34CC15B2AD77001185F4 /* CC3Math.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF348A15B2AD77001185F4 /* CC3Math.m */; };
+		B2FF34CD15B2AD77001185F4 /* CC3Math.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF348A15B2AD77001185F4 /* CC3Math.m */; };
+		B2FF34CE15B2AD77001185F4 /* NSValue+CC3Types.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF348E15B2AD77001185F4 /* NSValue+CC3Types.m */; };
+		B2FF34CF15B2AD77001185F4 /* NSValue+CC3Types.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF348E15B2AD77001185F4 /* NSValue+CC3Types.m */; };
+		B2FF34D015B2AD77001185F4 /* REBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF349015B2AD77001185F4 /* REBuffer.m */; };
+		B2FF34D115B2AD77001185F4 /* REBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF349015B2AD77001185F4 /* REBuffer.m */; };
+		B2FF34D215B2AD77001185F4 /* RECache.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF349215B2AD77001185F4 /* RECache.m */; };
+		B2FF34D315B2AD77001185F4 /* RECache.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF349215B2AD77001185F4 /* RECache.m */; };
+		B2FF34D415B2AD77001185F4 /* RECamera.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF349415B2AD77001185F4 /* RECamera.m */; };
+		B2FF34D515B2AD77001185F4 /* RECamera.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF349415B2AD77001185F4 /* RECamera.m */; };
+		B2FF34D615B2AD77001185F4 /* REDirector.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF349615B2AD77001185F4 /* REDirector.m */; };
+		B2FF34D715B2AD77001185F4 /* REDirector.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF349615B2AD77001185F4 /* REDirector.m */; };
+		B2FF34D815B2AD77001185F4 /* REGLStateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF349815B2AD77001185F4 /* REGLStateManager.m */; };
+		B2FF34D915B2AD77001185F4 /* REGLStateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF349815B2AD77001185F4 /* REGLStateManager.m */; };
+		B2FF34DA15B2AD77001185F4 /* REGLTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF349A15B2AD77001185F4 /* REGLTypes.m */; };
+		B2FF34DB15B2AD77001185F4 /* REGLTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF349A15B2AD77001185F4 /* REGLTypes.m */; };
+		B2FF34DC15B2AD77001185F4 /* REGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF349C15B2AD77001185F4 /* REGLView.m */; };
+		B2FF34DD15B2AD77001185F4 /* REGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF349C15B2AD77001185F4 /* REGLView.m */; };
+		B2FF34DE15B2AD77001185F4 /* REKeyframedMeshNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF349E15B2AD77001185F4 /* REKeyframedMeshNode.m */; };
+		B2FF34DF15B2AD77001185F4 /* REKeyframedMeshNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF349E15B2AD77001185F4 /* REKeyframedMeshNode.m */; };
+		B2FF34E015B2AD77001185F4 /* RELight.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF34A015B2AD77001185F4 /* RELight.m */; };
+		B2FF34E115B2AD77001185F4 /* RELight.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF34A015B2AD77001185F4 /* RELight.m */; };
+		B2FF34E215B2AD77001185F4 /* REMaterial.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF34A215B2AD77001185F4 /* REMaterial.m */; };
+		B2FF34E315B2AD77001185F4 /* REMaterial.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF34A215B2AD77001185F4 /* REMaterial.m */; };
+		B2FF34E415B2AD77001185F4 /* RENode.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF34A515B2AD77001185F4 /* RENode.m */; };
+		B2FF34E515B2AD77001185F4 /* RENode.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF34A515B2AD77001185F4 /* RENode.m */; };
+		B2FF34E615B2AD77001185F4 /* RENSArrayAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF34A715B2AD77001185F4 /* RENSArrayAdditions.m */; };
+		B2FF34E715B2AD77001185F4 /* RENSArrayAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF34A715B2AD77001185F4 /* RENSArrayAdditions.m */; };
+		B2FF34E815B2AD77001185F4 /* RENSValueAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF34A915B2AD77001185F4 /* RENSValueAdditions.m */; };
+		B2FF34E915B2AD77001185F4 /* RENSValueAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF34A915B2AD77001185F4 /* RENSValueAdditions.m */; };
+		B2FF34EA15B2AD77001185F4 /* REProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF34AB15B2AD77001185F4 /* REProgram.m */; };
+		B2FF34EB15B2AD77001185F4 /* REProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF34AB15B2AD77001185F4 /* REProgram.m */; };
+		B2FF34EC15B2AD77001185F4 /* RERotator.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF34AD15B2AD77001185F4 /* RERotator.m */; };
+		B2FF34ED15B2AD77001185F4 /* RERotator.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF34AD15B2AD77001185F4 /* RERotator.m */; };
+		B2FF34EE15B2AD77001185F4 /* REScene.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF34AF15B2AD77001185F4 /* REScene.m */; };
+		B2FF34EF15B2AD77001185F4 /* REScene.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF34AF15B2AD77001185F4 /* REScene.m */; };
+		B2FF34F015B2AD77001185F4 /* REScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF34B115B2AD77001185F4 /* REScheduler.m */; };
+		B2FF34F115B2AD77001185F4 /* REScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF34B115B2AD77001185F4 /* REScheduler.m */; };
+		B2FF34F215B2AD77001185F4 /* REShader.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF34B315B2AD77001185F4 /* REShader.m */; };
+		B2FF34F315B2AD77001185F4 /* REShader.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF34B315B2AD77001185F4 /* REShader.m */; };
+		B2FF34F415B2AD77001185F4 /* RESprite.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF34B515B2AD77001185F4 /* RESprite.m */; };
+		B2FF34F515B2AD77001185F4 /* RESprite.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF34B515B2AD77001185F4 /* RESprite.m */; };
+		B2FF34F615B2AD77001185F4 /* RESpriteBatchNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF34B715B2AD77001185F4 /* RESpriteBatchNode.m */; };
+		B2FF34F715B2AD77001185F4 /* RESpriteBatchNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF34B715B2AD77001185F4 /* RESpriteBatchNode.m */; };
+		B2FF34F815B2AD77001185F4 /* RETexture.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF34B915B2AD77001185F4 /* RETexture.m */; };
+		B2FF34F915B2AD77001185F4 /* RETexture.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF34B915B2AD77001185F4 /* RETexture.m */; };
+		B2FF34FA15B2AD77001185F4 /* REVertexArrayObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF34BB15B2AD77001185F4 /* REVertexArrayObject.m */; };
+		B2FF34FB15B2AD77001185F4 /* REVertexArrayObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF34BB15B2AD77001185F4 /* REVertexArrayObject.m */; };
+		B2FF34FC15B2AD77001185F4 /* REWavefrontMesh.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF34BD15B2AD77001185F4 /* REWavefrontMesh.m */; };
+		B2FF34FD15B2AD77001185F4 /* REWavefrontMesh.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF34BD15B2AD77001185F4 /* REWavefrontMesh.m */; };
+		B2FF34FE15B2AD77001185F4 /* REWavefrontMeshElementIndexBatch.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF34BF15B2AD77001185F4 /* REWavefrontMeshElementIndexBatch.m */; };
+		B2FF34FF15B2AD77001185F4 /* REWavefrontMeshElementIndexBatch.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF34BF15B2AD77001185F4 /* REWavefrontMeshElementIndexBatch.m */; };
+		B2FF350015B2AD77001185F4 /* REWavefrontMeshGroupNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF34C115B2AD77001185F4 /* REWavefrontMeshGroupNode.m */; };
+		B2FF350115B2AD77001185F4 /* REWavefrontMeshGroupNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF34C115B2AD77001185F4 /* REWavefrontMeshGroupNode.m */; };
+		B2FF350215B2AD77001185F4 /* REWavefrontMeshNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF34C315B2AD77001185F4 /* REWavefrontMeshNode.m */; };
+		B2FF350315B2AD77001185F4 /* REWavefrontMeshNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF34C315B2AD77001185F4 /* REWavefrontMeshNode.m */; };
+		B2FF350415B2AD77001185F4 /* REWorld.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF34C515B2AD77001185F4 /* REWorld.m */; };
+		B2FF350515B2AD77001185F4 /* REWorld.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FF34C515B2AD77001185F4 /* REWorld.m */; };
+		B2FF350B15B2AD96001185F4 /* sRESprite.fsh in Resources */ = {isa = PBXBuildFile; fileRef = B2FF350715B2AD96001185F4 /* sRESprite.fsh */; };
+		B2FF350C15B2AD96001185F4 /* sRESprite.fsh in Resources */ = {isa = PBXBuildFile; fileRef = B2FF350715B2AD96001185F4 /* sRESprite.fsh */; };
+		B2FF350D15B2AD96001185F4 /* sRESprite.vsh in Resources */ = {isa = PBXBuildFile; fileRef = B2FF350815B2AD96001185F4 /* sRESprite.vsh */; };
+		B2FF350E15B2AD96001185F4 /* sRESprite.vsh in Resources */ = {isa = PBXBuildFile; fileRef = B2FF350815B2AD96001185F4 /* sRESprite.vsh */; };
+		B2FF350F15B2AD96001185F4 /* sRESpriteBatch.fsh in Resources */ = {isa = PBXBuildFile; fileRef = B2FF350915B2AD96001185F4 /* sRESpriteBatch.fsh */; };
+		B2FF351015B2AD96001185F4 /* sRESpriteBatch.fsh in Resources */ = {isa = PBXBuildFile; fileRef = B2FF350915B2AD96001185F4 /* sRESpriteBatch.fsh */; };
+		B2FF351115B2AD96001185F4 /* sRESpriteBatch.vsh in Resources */ = {isa = PBXBuildFile; fileRef = B2FF350A15B2AD96001185F4 /* sRESpriteBatch.vsh */; };
+		B2FF351215B2AD96001185F4 /* sRESpriteBatch.vsh in Resources */ = {isa = PBXBuildFile; fileRef = B2FF350A15B2AD96001185F4 /* sRESpriteBatch.vsh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -144,78 +141,6 @@
 		3A1237B515A7071700E404EA /* SphereNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SphereNode.h; sourceTree = "<group>"; };
 		3A1237B615A7071700E404EA /* SphereNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SphereNode.m; sourceTree = "<group>"; };
 		3A1D0CFB15A70BB2003BAC0F /* BumpSphereExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BumpSphereExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A55649315A70E7D005B03F4 /* CC3Foundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CC3Foundation.h; sourceTree = "<group>"; };
-		3A55649415A70E7D005B03F4 /* CC3Foundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CC3Foundation.m; sourceTree = "<group>"; };
-		3A55649515A70E7D005B03F4 /* CC3GLMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CC3GLMatrix.h; sourceTree = "<group>"; };
-		3A55649615A70E7D005B03F4 /* CC3GLMatrix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CC3GLMatrix.m; sourceTree = "<group>"; };
-		3A55649715A70E7D005B03F4 /* CC3Kazmath.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CC3Kazmath.c; sourceTree = "<group>"; };
-		3A55649815A70E7D005B03F4 /* CC3Kazmath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CC3Kazmath.h; sourceTree = "<group>"; };
-		3A55649915A70E7D005B03F4 /* CC3Logging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CC3Logging.h; sourceTree = "<group>"; };
-		3A55649A15A70E7D005B03F4 /* CC3Math.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CC3Math.h; sourceTree = "<group>"; };
-		3A55649B15A70E7D005B03F4 /* CC3Math.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CC3Math.m; sourceTree = "<group>"; };
-		3A55649C15A70E7D005B03F4 /* CC3MathInclude.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CC3MathInclude.h; sourceTree = "<group>"; };
-		3A55649D15A70E7D005B03F4 /* ccTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccTypes.h; sourceTree = "<group>"; };
-		3A55649E15A70E7D005B03F4 /* NSValue+CC3Types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValue+CC3Types.h"; sourceTree = "<group>"; };
-		3A55649F15A70E7D005B03F4 /* NSValue+CC3Types.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSValue+CC3Types.m"; sourceTree = "<group>"; };
-		3A5564A015A70E7D005B03F4 /* REBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REBuffer.h; sourceTree = SOURCE_ROOT; };
-		3A5564A115A70E7D005B03F4 /* REBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REBuffer.m; sourceTree = SOURCE_ROOT; };
-		3A5564A215A70E7D005B03F4 /* RECache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECache.h; sourceTree = SOURCE_ROOT; };
-		3A5564A315A70E7D005B03F4 /* RECache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECache.m; sourceTree = SOURCE_ROOT; };
-		3A5564A415A70E7D005B03F4 /* RECamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECamera.h; sourceTree = SOURCE_ROOT; };
-		3A5564A515A70E7D005B03F4 /* RECamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECamera.m; sourceTree = SOURCE_ROOT; };
-		3A5564A615A70E7D005B03F4 /* REDirector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REDirector.h; sourceTree = SOURCE_ROOT; };
-		3A5564A715A70E7D005B03F4 /* REDirector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REDirector.m; sourceTree = SOURCE_ROOT; };
-		3A5564A815A70E7D005B03F4 /* REGLStateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REGLStateManager.h; sourceTree = SOURCE_ROOT; };
-		3A5564A915A70E7D005B03F4 /* REGLStateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REGLStateManager.m; sourceTree = SOURCE_ROOT; };
-		3A5564AA15A70E7D005B03F4 /* REGLTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REGLTypes.h; sourceTree = SOURCE_ROOT; };
-		3A5564AB15A70E7D005B03F4 /* REGLTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REGLTypes.m; sourceTree = SOURCE_ROOT; };
-		3A5564AC15A70E7D005B03F4 /* REGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REGLView.h; sourceTree = SOURCE_ROOT; };
-		3A5564AD15A70E7D005B03F4 /* REGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REGLView.m; sourceTree = SOURCE_ROOT; };
-		3A5564AE15A70E7D005B03F4 /* REKeyframedMeshNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REKeyframedMeshNode.h; sourceTree = SOURCE_ROOT; };
-		3A5564AF15A70E7D005B03F4 /* REKeyframedMeshNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REKeyframedMeshNode.m; sourceTree = SOURCE_ROOT; };
-		3A5564B015A70E7D005B03F4 /* RELight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RELight.h; sourceTree = SOURCE_ROOT; };
-		3A5564B115A70E7D005B03F4 /* RELight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RELight.m; sourceTree = SOURCE_ROOT; };
-		3A5564B215A70E7D005B03F4 /* REMaterial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REMaterial.h; sourceTree = SOURCE_ROOT; };
-		3A5564B315A70E7D005B03F4 /* REMaterial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REMaterial.m; sourceTree = SOURCE_ROOT; };
-		3A5564B415A70E7D005B03F4 /* Rend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rend.h; sourceTree = SOURCE_ROOT; };
-		3A5564B515A70E7D005B03F4 /* RENode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RENode.h; sourceTree = SOURCE_ROOT; };
-		3A5564B615A70E7D005B03F4 /* RENode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RENode.m; sourceTree = SOURCE_ROOT; };
-		3A5564B715A70E7D005B03F4 /* RENSArrayAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RENSArrayAdditions.h; sourceTree = SOURCE_ROOT; };
-		3A5564B815A70E7D005B03F4 /* RENSArrayAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RENSArrayAdditions.m; sourceTree = SOURCE_ROOT; };
-		3A5564B915A70E7D005B03F4 /* RENSValueAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RENSValueAdditions.h; sourceTree = SOURCE_ROOT; };
-		3A5564BA15A70E7D005B03F4 /* RENSValueAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RENSValueAdditions.m; sourceTree = SOURCE_ROOT; };
-		3A5564BB15A70E7D005B03F4 /* REProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REProgram.h; sourceTree = SOURCE_ROOT; };
-		3A5564BC15A70E7D005B03F4 /* REProgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REProgram.m; sourceTree = SOURCE_ROOT; };
-		3A5564BD15A70E7D005B03F4 /* RERotator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RERotator.h; sourceTree = SOURCE_ROOT; };
-		3A5564BE15A70E7D005B03F4 /* RERotator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RERotator.m; sourceTree = SOURCE_ROOT; };
-		3A5564BF15A70E7D005B03F4 /* REScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REScene.h; sourceTree = SOURCE_ROOT; };
-		3A5564C015A70E7D005B03F4 /* REScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REScene.m; sourceTree = SOURCE_ROOT; };
-		3A5564C115A70E7D005B03F4 /* REScheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REScheduler.h; sourceTree = SOURCE_ROOT; };
-		3A5564C215A70E7D005B03F4 /* REScheduler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REScheduler.m; sourceTree = SOURCE_ROOT; };
-		3A5564C315A70E7D005B03F4 /* REShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REShader.h; sourceTree = SOURCE_ROOT; };
-		3A5564C415A70E7D005B03F4 /* REShader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REShader.m; sourceTree = SOURCE_ROOT; };
-		3A5564C515A70E7D005B03F4 /* RESprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESprite.h; sourceTree = SOURCE_ROOT; };
-		3A5564C615A70E7D005B03F4 /* RESprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESprite.m; sourceTree = SOURCE_ROOT; };
-		3A5564C715A70E7D005B03F4 /* RESpriteBatchNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESpriteBatchNode.h; sourceTree = SOURCE_ROOT; };
-		3A5564C815A70E7D005B03F4 /* RESpriteBatchNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESpriteBatchNode.m; sourceTree = SOURCE_ROOT; };
-		3A5564C915A70E7D005B03F4 /* RETexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RETexture.h; sourceTree = SOURCE_ROOT; };
-		3A5564CA15A70E7D005B03F4 /* RETexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RETexture.m; sourceTree = SOURCE_ROOT; };
-		3A5564CB15A70E7D005B03F4 /* REVertexArrayObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REVertexArrayObject.h; sourceTree = SOURCE_ROOT; };
-		3A5564CC15A70E7D005B03F4 /* REVertexArrayObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REVertexArrayObject.m; sourceTree = SOURCE_ROOT; };
-		3A5564CD15A70E7D005B03F4 /* REWavefrontMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REWavefrontMesh.h; sourceTree = SOURCE_ROOT; };
-		3A5564CE15A70E7D005B03F4 /* REWavefrontMesh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REWavefrontMesh.m; sourceTree = SOURCE_ROOT; };
-		3A5564CF15A70E7D005B03F4 /* REWavefrontMeshElementIndexBatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REWavefrontMeshElementIndexBatch.h; sourceTree = SOURCE_ROOT; };
-		3A5564D015A70E7D005B03F4 /* REWavefrontMeshElementIndexBatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REWavefrontMeshElementIndexBatch.m; sourceTree = SOURCE_ROOT; };
-		3A5564D115A70E7D005B03F4 /* REWavefrontMeshGroupNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REWavefrontMeshGroupNode.h; sourceTree = SOURCE_ROOT; };
-		3A5564D215A70E7D005B03F4 /* REWavefrontMeshGroupNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REWavefrontMeshGroupNode.m; sourceTree = SOURCE_ROOT; };
-		3A5564D315A70E7D005B03F4 /* REWavefrontMeshNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REWavefrontMeshNode.h; sourceTree = SOURCE_ROOT; };
-		3A5564D415A70E7D005B03F4 /* REWavefrontMeshNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REWavefrontMeshNode.m; sourceTree = SOURCE_ROOT; };
-		3A5564D515A70E7D005B03F4 /* REWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REWorld.h; sourceTree = SOURCE_ROOT; };
-		3A5564D615A70E7D005B03F4 /* REWorld.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REWorld.m; sourceTree = SOURCE_ROOT; };
-		3A55651815A70E8B005B03F4 /* sRESprite.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = sRESprite.fsh; sourceTree = SOURCE_ROOT; };
-		3A55651915A70E8B005B03F4 /* sRESprite.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = sRESprite.vsh; sourceTree = SOURCE_ROOT; };
-		3A55651A15A70E8B005B03F4 /* sRESpriteBatch.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = sRESpriteBatch.fsh; sourceTree = SOURCE_ROOT; };
-		3A55651B15A70E8B005B03F4 /* sRESpriteBatch.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = sRESpriteBatch.vsh; sourceTree = SOURCE_ROOT; };
 		B25D2E5C1599CF4A004CA9DE /* sFragmentLighting.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = sFragmentLighting.fsh; sourceTree = "<group>"; };
 		B25D2E5D1599CF4A004CA9DE /* sFragmentLighting.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = sFragmentLighting.vsh; sourceTree = "<group>"; };
 		B25D2E621599D497004CA9DE /* teapot.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = teapot.mtl; path = Resources/teapot.mtl; sourceTree = "<group>"; };
@@ -241,6 +166,78 @@
 		B25D3D7C159928F200428A79 /* TeapotNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeapotNode.m; sourceTree = "<group>"; };
 		B25D3D8215992B4D00428A79 /* sVertexLighting.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = sVertexLighting.fsh; sourceTree = "<group>"; };
 		B25D3D8315992B4D00428A79 /* sVertexLighting.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = sVertexLighting.vsh; sourceTree = "<group>"; };
+		B2FF348215B2AD77001185F4 /* CC3Foundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CC3Foundation.h; sourceTree = "<group>"; };
+		B2FF348315B2AD77001185F4 /* CC3Foundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CC3Foundation.m; sourceTree = "<group>"; };
+		B2FF348415B2AD77001185F4 /* CC3GLMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CC3GLMatrix.h; sourceTree = "<group>"; };
+		B2FF348515B2AD77001185F4 /* CC3GLMatrix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CC3GLMatrix.m; sourceTree = "<group>"; };
+		B2FF348615B2AD77001185F4 /* CC3Kazmath.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CC3Kazmath.c; sourceTree = "<group>"; };
+		B2FF348715B2AD77001185F4 /* CC3Kazmath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CC3Kazmath.h; sourceTree = "<group>"; };
+		B2FF348815B2AD77001185F4 /* CC3Logging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CC3Logging.h; sourceTree = "<group>"; };
+		B2FF348915B2AD77001185F4 /* CC3Math.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CC3Math.h; sourceTree = "<group>"; };
+		B2FF348A15B2AD77001185F4 /* CC3Math.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CC3Math.m; sourceTree = "<group>"; };
+		B2FF348B15B2AD77001185F4 /* CC3MathInclude.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CC3MathInclude.h; sourceTree = "<group>"; };
+		B2FF348C15B2AD77001185F4 /* ccTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccTypes.h; sourceTree = "<group>"; };
+		B2FF348D15B2AD77001185F4 /* NSValue+CC3Types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValue+CC3Types.h"; sourceTree = "<group>"; };
+		B2FF348E15B2AD77001185F4 /* NSValue+CC3Types.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSValue+CC3Types.m"; sourceTree = "<group>"; };
+		B2FF348F15B2AD77001185F4 /* REBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REBuffer.h; sourceTree = "<group>"; };
+		B2FF349015B2AD77001185F4 /* REBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REBuffer.m; sourceTree = "<group>"; };
+		B2FF349115B2AD77001185F4 /* RECache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECache.h; sourceTree = "<group>"; };
+		B2FF349215B2AD77001185F4 /* RECache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECache.m; sourceTree = "<group>"; };
+		B2FF349315B2AD77001185F4 /* RECamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECamera.h; sourceTree = "<group>"; };
+		B2FF349415B2AD77001185F4 /* RECamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECamera.m; sourceTree = "<group>"; };
+		B2FF349515B2AD77001185F4 /* REDirector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REDirector.h; sourceTree = "<group>"; };
+		B2FF349615B2AD77001185F4 /* REDirector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REDirector.m; sourceTree = "<group>"; };
+		B2FF349715B2AD77001185F4 /* REGLStateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REGLStateManager.h; sourceTree = "<group>"; };
+		B2FF349815B2AD77001185F4 /* REGLStateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REGLStateManager.m; sourceTree = "<group>"; };
+		B2FF349915B2AD77001185F4 /* REGLTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REGLTypes.h; sourceTree = "<group>"; };
+		B2FF349A15B2AD77001185F4 /* REGLTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REGLTypes.m; sourceTree = "<group>"; };
+		B2FF349B15B2AD77001185F4 /* REGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REGLView.h; sourceTree = "<group>"; };
+		B2FF349C15B2AD77001185F4 /* REGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REGLView.m; sourceTree = "<group>"; };
+		B2FF349D15B2AD77001185F4 /* REKeyframedMeshNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REKeyframedMeshNode.h; sourceTree = "<group>"; };
+		B2FF349E15B2AD77001185F4 /* REKeyframedMeshNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REKeyframedMeshNode.m; sourceTree = "<group>"; };
+		B2FF349F15B2AD77001185F4 /* RELight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RELight.h; sourceTree = "<group>"; };
+		B2FF34A015B2AD77001185F4 /* RELight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RELight.m; sourceTree = "<group>"; };
+		B2FF34A115B2AD77001185F4 /* REMaterial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REMaterial.h; sourceTree = "<group>"; };
+		B2FF34A215B2AD77001185F4 /* REMaterial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REMaterial.m; sourceTree = "<group>"; };
+		B2FF34A315B2AD77001185F4 /* Rend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rend.h; sourceTree = "<group>"; };
+		B2FF34A415B2AD77001185F4 /* RENode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RENode.h; sourceTree = "<group>"; };
+		B2FF34A515B2AD77001185F4 /* RENode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RENode.m; sourceTree = "<group>"; };
+		B2FF34A615B2AD77001185F4 /* RENSArrayAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RENSArrayAdditions.h; sourceTree = "<group>"; };
+		B2FF34A715B2AD77001185F4 /* RENSArrayAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RENSArrayAdditions.m; sourceTree = "<group>"; };
+		B2FF34A815B2AD77001185F4 /* RENSValueAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RENSValueAdditions.h; sourceTree = "<group>"; };
+		B2FF34A915B2AD77001185F4 /* RENSValueAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RENSValueAdditions.m; sourceTree = "<group>"; };
+		B2FF34AA15B2AD77001185F4 /* REProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REProgram.h; sourceTree = "<group>"; };
+		B2FF34AB15B2AD77001185F4 /* REProgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REProgram.m; sourceTree = "<group>"; };
+		B2FF34AC15B2AD77001185F4 /* RERotator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RERotator.h; sourceTree = "<group>"; };
+		B2FF34AD15B2AD77001185F4 /* RERotator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RERotator.m; sourceTree = "<group>"; };
+		B2FF34AE15B2AD77001185F4 /* REScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REScene.h; sourceTree = "<group>"; };
+		B2FF34AF15B2AD77001185F4 /* REScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REScene.m; sourceTree = "<group>"; };
+		B2FF34B015B2AD77001185F4 /* REScheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REScheduler.h; sourceTree = "<group>"; };
+		B2FF34B115B2AD77001185F4 /* REScheduler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REScheduler.m; sourceTree = "<group>"; };
+		B2FF34B215B2AD77001185F4 /* REShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REShader.h; sourceTree = "<group>"; };
+		B2FF34B315B2AD77001185F4 /* REShader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REShader.m; sourceTree = "<group>"; };
+		B2FF34B415B2AD77001185F4 /* RESprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESprite.h; sourceTree = "<group>"; };
+		B2FF34B515B2AD77001185F4 /* RESprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESprite.m; sourceTree = "<group>"; };
+		B2FF34B615B2AD77001185F4 /* RESpriteBatchNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESpriteBatchNode.h; sourceTree = "<group>"; };
+		B2FF34B715B2AD77001185F4 /* RESpriteBatchNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESpriteBatchNode.m; sourceTree = "<group>"; };
+		B2FF34B815B2AD77001185F4 /* RETexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RETexture.h; sourceTree = "<group>"; };
+		B2FF34B915B2AD77001185F4 /* RETexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RETexture.m; sourceTree = "<group>"; };
+		B2FF34BA15B2AD77001185F4 /* REVertexArrayObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REVertexArrayObject.h; sourceTree = "<group>"; };
+		B2FF34BB15B2AD77001185F4 /* REVertexArrayObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REVertexArrayObject.m; sourceTree = "<group>"; };
+		B2FF34BC15B2AD77001185F4 /* REWavefrontMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REWavefrontMesh.h; sourceTree = "<group>"; };
+		B2FF34BD15B2AD77001185F4 /* REWavefrontMesh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REWavefrontMesh.m; sourceTree = "<group>"; };
+		B2FF34BE15B2AD77001185F4 /* REWavefrontMeshElementIndexBatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REWavefrontMeshElementIndexBatch.h; sourceTree = "<group>"; };
+		B2FF34BF15B2AD77001185F4 /* REWavefrontMeshElementIndexBatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REWavefrontMeshElementIndexBatch.m; sourceTree = "<group>"; };
+		B2FF34C015B2AD77001185F4 /* REWavefrontMeshGroupNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REWavefrontMeshGroupNode.h; sourceTree = "<group>"; };
+		B2FF34C115B2AD77001185F4 /* REWavefrontMeshGroupNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REWavefrontMeshGroupNode.m; sourceTree = "<group>"; };
+		B2FF34C215B2AD77001185F4 /* REWavefrontMeshNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REWavefrontMeshNode.h; sourceTree = "<group>"; };
+		B2FF34C315B2AD77001185F4 /* REWavefrontMeshNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REWavefrontMeshNode.m; sourceTree = "<group>"; };
+		B2FF34C415B2AD77001185F4 /* REWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REWorld.h; sourceTree = "<group>"; };
+		B2FF34C515B2AD77001185F4 /* REWorld.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REWorld.m; sourceTree = "<group>"; };
+		B2FF350715B2AD96001185F4 /* sRESprite.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = sRESprite.fsh; sourceTree = "<group>"; };
+		B2FF350815B2AD96001185F4 /* sRESprite.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = sRESprite.vsh; sourceTree = "<group>"; };
+		B2FF350915B2AD96001185F4 /* sRESpriteBatch.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = sRESpriteBatch.fsh; sourceTree = "<group>"; };
+		B2FF350A15B2AD96001185F4 /* sRESpriteBatch.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = sRESpriteBatch.vsh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -296,16 +293,6 @@
 				3A1237B615A7071700E404EA /* SphereNode.m */,
 			);
 			name = "BumpSphere Example";
-			sourceTree = "<group>";
-		};
-		3A12372515A704F200E404EA /* Rend */ = {
-			isa = PBXGroup;
-			children = (
-				3A55649115A70E71005B03F4 /* Classes */,
-				3A55651715A70E81005B03F4 /* Shaders */,
-			);
-			name = Rend;
-			path = ../../../Rend;
 			sourceTree = "<group>";
 		};
 		3A12379A15A705B800E404EA /* Shared Content */ = {
@@ -370,100 +357,6 @@
 			name = Shaders;
 			sourceTree = "<group>";
 		};
-		3A55649115A70E71005B03F4 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				3A55649215A70E7D005B03F4 /* CC3Math */,
-				3A5564A015A70E7D005B03F4 /* REBuffer.h */,
-				3A5564A115A70E7D005B03F4 /* REBuffer.m */,
-				3A5564A215A70E7D005B03F4 /* RECache.h */,
-				3A5564A315A70E7D005B03F4 /* RECache.m */,
-				3A5564A415A70E7D005B03F4 /* RECamera.h */,
-				3A5564A515A70E7D005B03F4 /* RECamera.m */,
-				3A5564A615A70E7D005B03F4 /* REDirector.h */,
-				3A5564A715A70E7D005B03F4 /* REDirector.m */,
-				3A5564A815A70E7D005B03F4 /* REGLStateManager.h */,
-				3A5564A915A70E7D005B03F4 /* REGLStateManager.m */,
-				3A5564AA15A70E7D005B03F4 /* REGLTypes.h */,
-				3A5564AB15A70E7D005B03F4 /* REGLTypes.m */,
-				3A5564AC15A70E7D005B03F4 /* REGLView.h */,
-				3A5564AD15A70E7D005B03F4 /* REGLView.m */,
-				3A5564AE15A70E7D005B03F4 /* REKeyframedMeshNode.h */,
-				3A5564AF15A70E7D005B03F4 /* REKeyframedMeshNode.m */,
-				3A5564B015A70E7D005B03F4 /* RELight.h */,
-				3A5564B115A70E7D005B03F4 /* RELight.m */,
-				3A5564B215A70E7D005B03F4 /* REMaterial.h */,
-				3A5564B315A70E7D005B03F4 /* REMaterial.m */,
-				3A5564B415A70E7D005B03F4 /* Rend.h */,
-				3A5564B515A70E7D005B03F4 /* RENode.h */,
-				3A5564B615A70E7D005B03F4 /* RENode.m */,
-				3A5564B715A70E7D005B03F4 /* RENSArrayAdditions.h */,
-				3A5564B815A70E7D005B03F4 /* RENSArrayAdditions.m */,
-				3A5564B915A70E7D005B03F4 /* RENSValueAdditions.h */,
-				3A5564BA15A70E7D005B03F4 /* RENSValueAdditions.m */,
-				3A5564BB15A70E7D005B03F4 /* REProgram.h */,
-				3A5564BC15A70E7D005B03F4 /* REProgram.m */,
-				3A5564BD15A70E7D005B03F4 /* RERotator.h */,
-				3A5564BE15A70E7D005B03F4 /* RERotator.m */,
-				3A5564BF15A70E7D005B03F4 /* REScene.h */,
-				3A5564C015A70E7D005B03F4 /* REScene.m */,
-				3A5564C115A70E7D005B03F4 /* REScheduler.h */,
-				3A5564C215A70E7D005B03F4 /* REScheduler.m */,
-				3A5564C315A70E7D005B03F4 /* REShader.h */,
-				3A5564C415A70E7D005B03F4 /* REShader.m */,
-				3A5564C515A70E7D005B03F4 /* RESprite.h */,
-				3A5564C615A70E7D005B03F4 /* RESprite.m */,
-				3A5564C715A70E7D005B03F4 /* RESpriteBatchNode.h */,
-				3A5564C815A70E7D005B03F4 /* RESpriteBatchNode.m */,
-				3A5564C915A70E7D005B03F4 /* RETexture.h */,
-				3A5564CA15A70E7D005B03F4 /* RETexture.m */,
-				3A5564CB15A70E7D005B03F4 /* REVertexArrayObject.h */,
-				3A5564CC15A70E7D005B03F4 /* REVertexArrayObject.m */,
-				3A5564CD15A70E7D005B03F4 /* REWavefrontMesh.h */,
-				3A5564CE15A70E7D005B03F4 /* REWavefrontMesh.m */,
-				3A5564CF15A70E7D005B03F4 /* REWavefrontMeshElementIndexBatch.h */,
-				3A5564D015A70E7D005B03F4 /* REWavefrontMeshElementIndexBatch.m */,
-				3A5564D115A70E7D005B03F4 /* REWavefrontMeshGroupNode.h */,
-				3A5564D215A70E7D005B03F4 /* REWavefrontMeshGroupNode.m */,
-				3A5564D315A70E7D005B03F4 /* REWavefrontMeshNode.h */,
-				3A5564D415A70E7D005B03F4 /* REWavefrontMeshNode.m */,
-				3A5564D515A70E7D005B03F4 /* REWorld.h */,
-				3A5564D615A70E7D005B03F4 /* REWorld.m */,
-			);
-			name = Classes;
-			sourceTree = "<group>";
-		};
-		3A55649215A70E7D005B03F4 /* CC3Math */ = {
-			isa = PBXGroup;
-			children = (
-				3A55649315A70E7D005B03F4 /* CC3Foundation.h */,
-				3A55649415A70E7D005B03F4 /* CC3Foundation.m */,
-				3A55649515A70E7D005B03F4 /* CC3GLMatrix.h */,
-				3A55649615A70E7D005B03F4 /* CC3GLMatrix.m */,
-				3A55649715A70E7D005B03F4 /* CC3Kazmath.c */,
-				3A55649815A70E7D005B03F4 /* CC3Kazmath.h */,
-				3A55649915A70E7D005B03F4 /* CC3Logging.h */,
-				3A55649A15A70E7D005B03F4 /* CC3Math.h */,
-				3A55649B15A70E7D005B03F4 /* CC3Math.m */,
-				3A55649C15A70E7D005B03F4 /* CC3MathInclude.h */,
-				3A55649D15A70E7D005B03F4 /* ccTypes.h */,
-				3A55649E15A70E7D005B03F4 /* NSValue+CC3Types.h */,
-				3A55649F15A70E7D005B03F4 /* NSValue+CC3Types.m */,
-			);
-			path = CC3Math;
-			sourceTree = SOURCE_ROOT;
-		};
-		3A55651715A70E81005B03F4 /* Shaders */ = {
-			isa = PBXGroup;
-			children = (
-				3A55651815A70E8B005B03F4 /* sRESprite.fsh */,
-				3A55651915A70E8B005B03F4 /* sRESprite.vsh */,
-				3A55651A15A70E8B005B03F4 /* sRESpriteBatch.fsh */,
-				3A55651B15A70E8B005B03F4 /* sRESpriteBatch.vsh */,
-			);
-			name = Shaders;
-			sourceTree = "<group>";
-		};
 		B25D2E5015999D8F004CA9DE /* Shaders */ = {
 			isa = PBXGroup;
 			children = (
@@ -506,7 +399,8 @@
 		B25D3CEA1599171B00428A79 /* Rend Example Collection */ = {
 			isa = PBXGroup;
 			children = (
-				3A12372515A704F200E404EA /* Rend */,
+				B2FF348015B2AD77001185F4 /* Rend */,
+				B2FF350615B2AD96001185F4 /* Shaders */,
 				3A12372015A7040200E404EA /* Examples */,
 				B25D3CEB1599171B00428A79 /* Supporting Files */,
 			);
@@ -544,6 +438,102 @@
 				B25D3D7C159928F200428A79 /* TeapotNode.m */,
 			);
 			name = "Teapot Example";
+			sourceTree = "<group>";
+		};
+		B2FF348015B2AD77001185F4 /* Rend */ = {
+			isa = PBXGroup;
+			children = (
+				B2FF348115B2AD77001185F4 /* CC3Math */,
+				B2FF348F15B2AD77001185F4 /* REBuffer.h */,
+				B2FF349015B2AD77001185F4 /* REBuffer.m */,
+				B2FF349115B2AD77001185F4 /* RECache.h */,
+				B2FF349215B2AD77001185F4 /* RECache.m */,
+				B2FF349315B2AD77001185F4 /* RECamera.h */,
+				B2FF349415B2AD77001185F4 /* RECamera.m */,
+				B2FF349515B2AD77001185F4 /* REDirector.h */,
+				B2FF349615B2AD77001185F4 /* REDirector.m */,
+				B2FF349715B2AD77001185F4 /* REGLStateManager.h */,
+				B2FF349815B2AD77001185F4 /* REGLStateManager.m */,
+				B2FF349915B2AD77001185F4 /* REGLTypes.h */,
+				B2FF349A15B2AD77001185F4 /* REGLTypes.m */,
+				B2FF349B15B2AD77001185F4 /* REGLView.h */,
+				B2FF349C15B2AD77001185F4 /* REGLView.m */,
+				B2FF349D15B2AD77001185F4 /* REKeyframedMeshNode.h */,
+				B2FF349E15B2AD77001185F4 /* REKeyframedMeshNode.m */,
+				B2FF349F15B2AD77001185F4 /* RELight.h */,
+				B2FF34A015B2AD77001185F4 /* RELight.m */,
+				B2FF34A115B2AD77001185F4 /* REMaterial.h */,
+				B2FF34A215B2AD77001185F4 /* REMaterial.m */,
+				B2FF34A315B2AD77001185F4 /* Rend.h */,
+				B2FF34A415B2AD77001185F4 /* RENode.h */,
+				B2FF34A515B2AD77001185F4 /* RENode.m */,
+				B2FF34A615B2AD77001185F4 /* RENSArrayAdditions.h */,
+				B2FF34A715B2AD77001185F4 /* RENSArrayAdditions.m */,
+				B2FF34A815B2AD77001185F4 /* RENSValueAdditions.h */,
+				B2FF34A915B2AD77001185F4 /* RENSValueAdditions.m */,
+				B2FF34AA15B2AD77001185F4 /* REProgram.h */,
+				B2FF34AB15B2AD77001185F4 /* REProgram.m */,
+				B2FF34AC15B2AD77001185F4 /* RERotator.h */,
+				B2FF34AD15B2AD77001185F4 /* RERotator.m */,
+				B2FF34AE15B2AD77001185F4 /* REScene.h */,
+				B2FF34AF15B2AD77001185F4 /* REScene.m */,
+				B2FF34B015B2AD77001185F4 /* REScheduler.h */,
+				B2FF34B115B2AD77001185F4 /* REScheduler.m */,
+				B2FF34B215B2AD77001185F4 /* REShader.h */,
+				B2FF34B315B2AD77001185F4 /* REShader.m */,
+				B2FF34B415B2AD77001185F4 /* RESprite.h */,
+				B2FF34B515B2AD77001185F4 /* RESprite.m */,
+				B2FF34B615B2AD77001185F4 /* RESpriteBatchNode.h */,
+				B2FF34B715B2AD77001185F4 /* RESpriteBatchNode.m */,
+				B2FF34B815B2AD77001185F4 /* RETexture.h */,
+				B2FF34B915B2AD77001185F4 /* RETexture.m */,
+				B2FF34BA15B2AD77001185F4 /* REVertexArrayObject.h */,
+				B2FF34BB15B2AD77001185F4 /* REVertexArrayObject.m */,
+				B2FF34BC15B2AD77001185F4 /* REWavefrontMesh.h */,
+				B2FF34BD15B2AD77001185F4 /* REWavefrontMesh.m */,
+				B2FF34BE15B2AD77001185F4 /* REWavefrontMeshElementIndexBatch.h */,
+				B2FF34BF15B2AD77001185F4 /* REWavefrontMeshElementIndexBatch.m */,
+				B2FF34C015B2AD77001185F4 /* REWavefrontMeshGroupNode.h */,
+				B2FF34C115B2AD77001185F4 /* REWavefrontMeshGroupNode.m */,
+				B2FF34C215B2AD77001185F4 /* REWavefrontMeshNode.h */,
+				B2FF34C315B2AD77001185F4 /* REWavefrontMeshNode.m */,
+				B2FF34C415B2AD77001185F4 /* REWorld.h */,
+				B2FF34C515B2AD77001185F4 /* REWorld.m */,
+			);
+			name = Rend;
+			path = ../../../Classes;
+			sourceTree = "<group>";
+		};
+		B2FF348115B2AD77001185F4 /* CC3Math */ = {
+			isa = PBXGroup;
+			children = (
+				B2FF348215B2AD77001185F4 /* CC3Foundation.h */,
+				B2FF348315B2AD77001185F4 /* CC3Foundation.m */,
+				B2FF348415B2AD77001185F4 /* CC3GLMatrix.h */,
+				B2FF348515B2AD77001185F4 /* CC3GLMatrix.m */,
+				B2FF348615B2AD77001185F4 /* CC3Kazmath.c */,
+				B2FF348715B2AD77001185F4 /* CC3Kazmath.h */,
+				B2FF348815B2AD77001185F4 /* CC3Logging.h */,
+				B2FF348915B2AD77001185F4 /* CC3Math.h */,
+				B2FF348A15B2AD77001185F4 /* CC3Math.m */,
+				B2FF348B15B2AD77001185F4 /* CC3MathInclude.h */,
+				B2FF348C15B2AD77001185F4 /* ccTypes.h */,
+				B2FF348D15B2AD77001185F4 /* NSValue+CC3Types.h */,
+				B2FF348E15B2AD77001185F4 /* NSValue+CC3Types.m */,
+			);
+			path = CC3Math;
+			sourceTree = "<group>";
+		};
+		B2FF350615B2AD96001185F4 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				B2FF350715B2AD96001185F4 /* sRESprite.fsh */,
+				B2FF350815B2AD96001185F4 /* sRESprite.vsh */,
+				B2FF350915B2AD96001185F4 /* sRESpriteBatch.fsh */,
+				B2FF350A15B2AD96001185F4 /* sRESpriteBatch.vsh */,
+			);
+			name = Shaders;
+			path = ../../../Shaders;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -615,6 +605,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2FF350C15B2AD96001185F4 /* sRESprite.fsh in Resources */,
+				B2FF350E15B2AD96001185F4 /* sRESprite.vsh in Resources */,
+				B2FF351015B2AD96001185F4 /* sRESpriteBatch.fsh in Resources */,
+				B2FF351215B2AD96001185F4 /* sRESpriteBatch.vsh in Resources */,
 				3A1D0D0615A70C05003BAC0F /* SphereViewController.xib in Resources */,
 				3A1D0CF115A70BB2003BAC0F /* InfoPlist.strings in Resources */,
 				3A1D0CF315A70BB2003BAC0F /* sVertexLighting.fsh in Resources */,
@@ -630,6 +624,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2FF350B15B2AD96001185F4 /* sRESprite.fsh in Resources */,
+				B2FF350D15B2AD96001185F4 /* sRESprite.vsh in Resources */,
+				B2FF350F15B2AD96001185F4 /* sRESpriteBatch.fsh in Resources */,
+				B2FF351115B2AD96001185F4 /* sRESpriteBatch.vsh in Resources */,
 				B25D3CEF1599171B00428A79 /* InfoPlist.strings in Resources */,
 				B25D3D5F1599239600428A79 /* teapot.obj in Resources */,
 				B25D3D8415992B5900428A79 /* sVertexLighting.fsh in Resources */,
@@ -647,53 +645,46 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A1D0D0215A70BF8003BAC0F /* SphereViewController.h in Sources */,
 				3A1D0CBD15A70BB2003BAC0F /* main.m in Sources */,
 				3A1D0CC015A70BB2003BAC0F /* GLViewController.m in Sources */,
 				3A1D0CE615A70BB2003BAC0F /* UIViewAdditions.m in Sources */,
 				3A1D0CE715A70BB2003BAC0F /* UIImageAdditions.m in Sources */,
 				3A1D0CE815A70BB2003BAC0F /* AngleUtil.m in Sources */,
-				3A1D0D0015A70BF4003BAC0F /* BumpSphereAppDelegate.h in Sources */,
 				3A1D0D0115A70BF6003BAC0F /* BumpSphereAppDelegate.m in Sources */,
 				3A1D0D0315A70BFA003BAC0F /* SphereViewController.m in Sources */,
-				3A1D0D0415A70BFB003BAC0F /* SphereNode.h in Sources */,
 				3A1D0D0515A70BFD003BAC0F /* SphereNode.m in Sources */,
-				3A5564D815A70E7D005B03F4 /* CC3Foundation.m in Sources */,
-				3A5564DA15A70E7D005B03F4 /* CC3GLMatrix.m in Sources */,
-				3A5564DC15A70E7D005B03F4 /* CC3Kazmath.c in Sources */,
-				3A5564DE15A70E7D005B03F4 /* CC3Math.m in Sources */,
-				3A5564E015A70E7D005B03F4 /* NSValue+CC3Types.m in Sources */,
-				3A5564E215A70E7D005B03F4 /* REBuffer.m in Sources */,
-				3A5564E415A70E7D005B03F4 /* RECache.m in Sources */,
-				3A5564E615A70E7D005B03F4 /* RECamera.m in Sources */,
-				3A5564E815A70E7D005B03F4 /* REDirector.m in Sources */,
-				3A5564EA15A70E7D005B03F4 /* REGLStateManager.m in Sources */,
-				3A5564EC15A70E7D005B03F4 /* REGLTypes.m in Sources */,
-				3A5564EE15A70E7D005B03F4 /* REGLView.m in Sources */,
-				3A5564F015A70E7D005B03F4 /* REKeyframedMeshNode.m in Sources */,
-				3A5564F215A70E7D005B03F4 /* RELight.m in Sources */,
-				3A5564F415A70E7D005B03F4 /* REMaterial.m in Sources */,
-				3A5564F615A70E7D005B03F4 /* RENode.m in Sources */,
-				3A5564F815A70E7D005B03F4 /* RENSArrayAdditions.m in Sources */,
-				3A5564FA15A70E7D005B03F4 /* RENSValueAdditions.m in Sources */,
-				3A5564FC15A70E7D005B03F4 /* REProgram.m in Sources */,
-				3A5564FE15A70E7D005B03F4 /* RERotator.m in Sources */,
-				3A55650015A70E7D005B03F4 /* REScene.m in Sources */,
-				3A55650215A70E7D005B03F4 /* REScheduler.m in Sources */,
-				3A55650415A70E7D005B03F4 /* REShader.m in Sources */,
-				3A55650615A70E7D005B03F4 /* RESprite.m in Sources */,
-				3A55650815A70E7D005B03F4 /* RESpriteBatchNode.m in Sources */,
-				3A55650A15A70E7D005B03F4 /* RETexture.m in Sources */,
-				3A55650C15A70E7D005B03F4 /* REVertexArrayObject.m in Sources */,
-				3A55650E15A70E7D005B03F4 /* REWavefrontMesh.m in Sources */,
-				3A55651015A70E7D005B03F4 /* REWavefrontMeshElementIndexBatch.m in Sources */,
-				3A55651215A70E7D005B03F4 /* REWavefrontMeshGroupNode.m in Sources */,
-				3A55651415A70E7D005B03F4 /* REWavefrontMeshNode.m in Sources */,
-				3A55651615A70E7D005B03F4 /* REWorld.m in Sources */,
-				3A55651D15A70E8B005B03F4 /* sRESprite.fsh in Sources */,
-				3A55651F15A70E8B005B03F4 /* sRESprite.vsh in Sources */,
-				3A55652115A70E8B005B03F4 /* sRESpriteBatch.fsh in Sources */,
-				3A55652315A70E8B005B03F4 /* sRESpriteBatch.vsh in Sources */,
+				B2FF34C715B2AD77001185F4 /* CC3Foundation.m in Sources */,
+				B2FF34C915B2AD77001185F4 /* CC3GLMatrix.m in Sources */,
+				B2FF34CB15B2AD77001185F4 /* CC3Kazmath.c in Sources */,
+				B2FF34CD15B2AD77001185F4 /* CC3Math.m in Sources */,
+				B2FF34CF15B2AD77001185F4 /* NSValue+CC3Types.m in Sources */,
+				B2FF34D115B2AD77001185F4 /* REBuffer.m in Sources */,
+				B2FF34D315B2AD77001185F4 /* RECache.m in Sources */,
+				B2FF34D515B2AD77001185F4 /* RECamera.m in Sources */,
+				B2FF34D715B2AD77001185F4 /* REDirector.m in Sources */,
+				B2FF34D915B2AD77001185F4 /* REGLStateManager.m in Sources */,
+				B2FF34DB15B2AD77001185F4 /* REGLTypes.m in Sources */,
+				B2FF34DD15B2AD77001185F4 /* REGLView.m in Sources */,
+				B2FF34DF15B2AD77001185F4 /* REKeyframedMeshNode.m in Sources */,
+				B2FF34E115B2AD77001185F4 /* RELight.m in Sources */,
+				B2FF34E315B2AD77001185F4 /* REMaterial.m in Sources */,
+				B2FF34E515B2AD77001185F4 /* RENode.m in Sources */,
+				B2FF34E715B2AD77001185F4 /* RENSArrayAdditions.m in Sources */,
+				B2FF34E915B2AD77001185F4 /* RENSValueAdditions.m in Sources */,
+				B2FF34EB15B2AD77001185F4 /* REProgram.m in Sources */,
+				B2FF34ED15B2AD77001185F4 /* RERotator.m in Sources */,
+				B2FF34EF15B2AD77001185F4 /* REScene.m in Sources */,
+				B2FF34F115B2AD77001185F4 /* REScheduler.m in Sources */,
+				B2FF34F315B2AD77001185F4 /* REShader.m in Sources */,
+				B2FF34F515B2AD77001185F4 /* RESprite.m in Sources */,
+				B2FF34F715B2AD77001185F4 /* RESpriteBatchNode.m in Sources */,
+				B2FF34F915B2AD77001185F4 /* RETexture.m in Sources */,
+				B2FF34FB15B2AD77001185F4 /* REVertexArrayObject.m in Sources */,
+				B2FF34FD15B2AD77001185F4 /* REWavefrontMesh.m in Sources */,
+				B2FF34FF15B2AD77001185F4 /* REWavefrontMeshElementIndexBatch.m in Sources */,
+				B2FF350115B2AD77001185F4 /* REWavefrontMeshGroupNode.m in Sources */,
+				B2FF350315B2AD77001185F4 /* REWavefrontMeshNode.m in Sources */,
+				B2FF350515B2AD77001185F4 /* REWorld.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -709,42 +700,38 @@
 				3A1237A215A7067500E404EA /* UIViewAdditions.m in Sources */,
 				3A1237A315A7067500E404EA /* UIImageAdditions.m in Sources */,
 				3A1237A715A7068B00E404EA /* AngleUtil.m in Sources */,
-				3A5564D715A70E7D005B03F4 /* CC3Foundation.m in Sources */,
-				3A5564D915A70E7D005B03F4 /* CC3GLMatrix.m in Sources */,
-				3A5564DB15A70E7D005B03F4 /* CC3Kazmath.c in Sources */,
-				3A5564DD15A70E7D005B03F4 /* CC3Math.m in Sources */,
-				3A5564DF15A70E7D005B03F4 /* NSValue+CC3Types.m in Sources */,
-				3A5564E115A70E7D005B03F4 /* REBuffer.m in Sources */,
-				3A5564E315A70E7D005B03F4 /* RECache.m in Sources */,
-				3A5564E515A70E7D005B03F4 /* RECamera.m in Sources */,
-				3A5564E715A70E7D005B03F4 /* REDirector.m in Sources */,
-				3A5564E915A70E7D005B03F4 /* REGLStateManager.m in Sources */,
-				3A5564EB15A70E7D005B03F4 /* REGLTypes.m in Sources */,
-				3A5564ED15A70E7D005B03F4 /* REGLView.m in Sources */,
-				3A5564EF15A70E7D005B03F4 /* REKeyframedMeshNode.m in Sources */,
-				3A5564F115A70E7D005B03F4 /* RELight.m in Sources */,
-				3A5564F315A70E7D005B03F4 /* REMaterial.m in Sources */,
-				3A5564F515A70E7D005B03F4 /* RENode.m in Sources */,
-				3A5564F715A70E7D005B03F4 /* RENSArrayAdditions.m in Sources */,
-				3A5564F915A70E7D005B03F4 /* RENSValueAdditions.m in Sources */,
-				3A5564FB15A70E7D005B03F4 /* REProgram.m in Sources */,
-				3A5564FD15A70E7D005B03F4 /* RERotator.m in Sources */,
-				3A5564FF15A70E7D005B03F4 /* REScene.m in Sources */,
-				3A55650115A70E7D005B03F4 /* REScheduler.m in Sources */,
-				3A55650315A70E7D005B03F4 /* REShader.m in Sources */,
-				3A55650515A70E7D005B03F4 /* RESprite.m in Sources */,
-				3A55650715A70E7D005B03F4 /* RESpriteBatchNode.m in Sources */,
-				3A55650915A70E7D005B03F4 /* RETexture.m in Sources */,
-				3A55650B15A70E7D005B03F4 /* REVertexArrayObject.m in Sources */,
-				3A55650D15A70E7D005B03F4 /* REWavefrontMesh.m in Sources */,
-				3A55650F15A70E7D005B03F4 /* REWavefrontMeshElementIndexBatch.m in Sources */,
-				3A55651115A70E7D005B03F4 /* REWavefrontMeshGroupNode.m in Sources */,
-				3A55651315A70E7D005B03F4 /* REWavefrontMeshNode.m in Sources */,
-				3A55651515A70E7D005B03F4 /* REWorld.m in Sources */,
-				3A55651C15A70E8B005B03F4 /* sRESprite.fsh in Sources */,
-				3A55651E15A70E8B005B03F4 /* sRESprite.vsh in Sources */,
-				3A55652015A70E8B005B03F4 /* sRESpriteBatch.fsh in Sources */,
-				3A55652215A70E8B005B03F4 /* sRESpriteBatch.vsh in Sources */,
+				B2FF34C615B2AD77001185F4 /* CC3Foundation.m in Sources */,
+				B2FF34C815B2AD77001185F4 /* CC3GLMatrix.m in Sources */,
+				B2FF34CA15B2AD77001185F4 /* CC3Kazmath.c in Sources */,
+				B2FF34CC15B2AD77001185F4 /* CC3Math.m in Sources */,
+				B2FF34CE15B2AD77001185F4 /* NSValue+CC3Types.m in Sources */,
+				B2FF34D015B2AD77001185F4 /* REBuffer.m in Sources */,
+				B2FF34D215B2AD77001185F4 /* RECache.m in Sources */,
+				B2FF34D415B2AD77001185F4 /* RECamera.m in Sources */,
+				B2FF34D615B2AD77001185F4 /* REDirector.m in Sources */,
+				B2FF34D815B2AD77001185F4 /* REGLStateManager.m in Sources */,
+				B2FF34DA15B2AD77001185F4 /* REGLTypes.m in Sources */,
+				B2FF34DC15B2AD77001185F4 /* REGLView.m in Sources */,
+				B2FF34DE15B2AD77001185F4 /* REKeyframedMeshNode.m in Sources */,
+				B2FF34E015B2AD77001185F4 /* RELight.m in Sources */,
+				B2FF34E215B2AD77001185F4 /* REMaterial.m in Sources */,
+				B2FF34E415B2AD77001185F4 /* RENode.m in Sources */,
+				B2FF34E615B2AD77001185F4 /* RENSArrayAdditions.m in Sources */,
+				B2FF34E815B2AD77001185F4 /* RENSValueAdditions.m in Sources */,
+				B2FF34EA15B2AD77001185F4 /* REProgram.m in Sources */,
+				B2FF34EC15B2AD77001185F4 /* RERotator.m in Sources */,
+				B2FF34EE15B2AD77001185F4 /* REScene.m in Sources */,
+				B2FF34F015B2AD77001185F4 /* REScheduler.m in Sources */,
+				B2FF34F215B2AD77001185F4 /* REShader.m in Sources */,
+				B2FF34F415B2AD77001185F4 /* RESprite.m in Sources */,
+				B2FF34F615B2AD77001185F4 /* RESpriteBatchNode.m in Sources */,
+				B2FF34F815B2AD77001185F4 /* RETexture.m in Sources */,
+				B2FF34FA15B2AD77001185F4 /* REVertexArrayObject.m in Sources */,
+				B2FF34FC15B2AD77001185F4 /* REWavefrontMesh.m in Sources */,
+				B2FF34FE15B2AD77001185F4 /* REWavefrontMeshElementIndexBatch.m in Sources */,
+				B2FF350015B2AD77001185F4 /* REWavefrontMeshGroupNode.m in Sources */,
+				B2FF350215B2AD77001185F4 /* REWavefrontMeshNode.m in Sources */,
+				B2FF350415B2AD77001185F4 /* REWorld.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
