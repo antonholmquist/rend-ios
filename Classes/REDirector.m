@@ -271,6 +271,9 @@ static int REDirectorNumberOfRunningDirectors = 0;
         return;
     }
     
+    // Warning: Uses sharedScheduler. What is there exists multiple directors? They will tick all schedulers.
+    [[REScheduler sharedScheduler] tick:dt];
+    
     [self drawWithoutPresentation];
     [self presentRenderbuffer];
     
@@ -295,8 +298,7 @@ static int REDirectorNumberOfRunningDirectors = 0;
     } lastDrawTime = now;
     
     
-    // Warning: Uses sharedScheduler. What is there exists multiple directors? They will tick all schedulers.
-    [[REScheduler sharedScheduler] tick:dt];
+    
     
     showFPS = NO;
     // FPS Stuff. May be moved?
