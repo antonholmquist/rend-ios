@@ -26,6 +26,7 @@
 
 #import "REKeyframedMeshNode.h"
 #import "REMaterial.h"
+#import "RELight.h"
 
 // This has to correspond to shader
 #define kShaderMaxDirectionalLights 2

@@ -25,6 +25,7 @@
  */
 
 #import <Foundation/Foundation.h>
+#import "CC3Foundation.h"
 
 @class REBuffer;
 

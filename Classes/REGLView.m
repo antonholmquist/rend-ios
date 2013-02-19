@@ -145,7 +145,7 @@
         //NSLog(@"error: %d", glGetError());
             
         if (glCheckFramebufferStatus(GL_FRAMEBUFFER) != GL_FRAMEBUFFER_COMPLETE) {
-            NSLog(@"GLView: Failed to make complete framebuffer object %x. This happens when we don't have current EAGLContext.", glCheckFramebufferStatus(GL_FRAMEBUFFER));
+            NSLog(@"GLView: Failed to make complete framebuffer object %x. This happens when we don't have current EAGLContext or if view size is zero.", glCheckFramebufferStatus(GL_FRAMEBUFFER));
         }
         
 

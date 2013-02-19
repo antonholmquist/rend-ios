@@ -24,6 +24,7 @@
  * THE SOFTWARE.
  */
 #import <Foundation/Foundation.h>
+#import "CC3Foundation.h"
 
 @interface REMaterial : NSObject {
     CC3Vector4 ambient_;
