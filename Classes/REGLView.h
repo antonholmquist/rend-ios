@@ -53,6 +53,7 @@
 
 /** The color renderbuffer associated with the view */
 @property (nonatomic, readonly) GLuint colorRenderbuffer;
+@property (nonatomic, readonly) GLuint multisampleColorRenderbuffer;
 
 @property (nonatomic, readonly) CGRect viewport;
 @property (nonatomic, readonly) BOOL multisampling;

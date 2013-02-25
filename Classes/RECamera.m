@@ -310,7 +310,7 @@
 								  yNearTopRight * yp,
 								  zNearTopRight);
     
-    //NSLog(@"pointLocNear: %f, %f, %f", pointLocNear.x, pointLocNear.y, pointLocNear.z);
+    NSLog(@"pointLocNear: %f, %f, %f", pointLocNear.x, pointLocNear.y, pointLocNear.z);
 
 	CC3Ray ray;
     
@@ -319,10 +319,10 @@
 		// local coordinates. Convert it to global coordinates before returning.
 		// The ray direction is straight out from that global location in the 
 		// camera's globalForwardDirection.
-		//ray.startLocation =  [self.transformMatrix transformLocation:pointLocNear];
+		ray.startLocation =  [self.transformMatrix transformLocation:pointLocNear];
 		//ray.direction = self.globalForwardDirection;
         
-        NSAssert(NO, @"Not implemented, kRECameraProjectionOrthographic");
+        //NSAssert(NO, @"Not implemented, kRECameraProjectionOrthographic");
 	} else {
 		// The location on the near clipping plane is relative to the camera's local
 		// coordinates. Since the camera's origin is zero in its local coordinates,

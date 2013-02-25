@@ -449,7 +449,7 @@ static int REDirectorNumberOfRunningDirectors = 0;
         // Set the scale parameter to your OpenGL ES view's contentScaleFactor
         // so that you get a high-resolution snapshot when its value is greater than 1.0
         //        CGFloat scale = eaglview.contentScaleFactor; //Crash?
-        CGFloat scale = [[UIScreen mainScreen] scale];
+        CGFloat scale = self.view.contentScaleFactor;
         widthInPoints = width / scale;
         heightInPoints = height / scale;
         UIGraphicsBeginImageContextWithOptions(CGSizeMake(widthInPoints, heightInPoints), NO, scale);

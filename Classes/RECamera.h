@@ -85,6 +85,8 @@ typedef enum {
 //- (CC3Vector)convert:(CGPoint)point fromView:(REGLView*)view;
 
 //-(CC3Ray)tmp_unprojectPoint:(CGPoint)cc2Point size:(CGSize)size;
+
+// Convert a 2d point in a view to a 3D ray
 -(CC3Ray)unprojectPoint:(CGPoint)cc2Point inView:(REGLView*)view;
 
 // If it's inside or intersects

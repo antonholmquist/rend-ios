@@ -38,6 +38,7 @@
 @synthesize multisampleFramebuffer;
 
 @synthesize multisampling = multisampling_;
+@synthesize multisampleColorRenderbuffer = multisampleColorRenderbuffer_;
 //@synthesize stencilRenderBuffer = stencilRenderBuffer_;
 //@synthesize depthStencilRenderbuffer = depthStencilRenderbuffer_;
 
@@ -67,7 +68,6 @@
         
         //multisampling_ = TARGET_IPHONE_SIMULATOR ? NO : multisampling; // Never use multisampling on simulator (it's slow, but works)
         multisampling_ = multisampling;
-        
         
         self.opaque = YES; // Should depend on colorFormat?
         
