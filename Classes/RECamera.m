@@ -310,7 +310,7 @@
 								  yNearTopRight * yp,
 								  zNearTopRight);
     
-    NSLog(@"pointLocNear: %f, %f, %f", pointLocNear.x, pointLocNear.y, pointLocNear.z);
+    //NSLog(@"pointLocNear: %f, %f, %f", pointLocNear.x, pointLocNear.y, pointLocNear.z);
 
 	CC3Ray ray;
     
