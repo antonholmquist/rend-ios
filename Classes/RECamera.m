@@ -317,7 +317,7 @@
 	if (projection == kRECameraProjectionOrthographic) {
 		// The location on the near clipping plane is relative to the camera's
 		// local coordinates. Convert it to global coordinates before returning.
-		// The ray direction is straight out from that global location in the 
+		// The ray direction is straight out from that global location in the
 		// camera's globalForwardDirection.
 		ray.startLocation =  [self.transformMatrix transformLocation:pointLocNear];
 		//ray.direction = self.globalForwardDirection;
