@@ -71,6 +71,10 @@
         
         self.opaque = YES; // Should depend on colorFormat?
         
+        if (scale == 0) {
+            scale = [[UIScreen mainScreen] scale];
+        }
+        
         CAEAGLLayer *eaglLayer = (CAEAGLLayer *)self.layer;
         eaglLayer.opaque = YES; // Should depend on colorFormat?
         self.contentScaleFactor = scale; 
