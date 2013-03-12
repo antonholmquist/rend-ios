@@ -93,6 +93,7 @@ typedef struct RESpriteAttribs {
 
 @property (nonatomic, readonly) RESpriteAttribs *attribs; // To be used for batch node and maybe others. Will be of length 4.
 
+// Do not set this directly
 @property (nonatomic, assign) RESpriteBatchNode *batchNode;
 
 

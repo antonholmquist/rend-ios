@@ -87,10 +87,7 @@
 }
 
 - (void)dealloc {
-    
-    if (batchNode_) {
-        [batchNode_ removeSprite:self];
-    }
+
     
     free(attribs);
     free(originalTexCoords);
@@ -269,18 +266,6 @@
     return YES;
 }
 
-- (void)setBatchNode:(RESpriteBatchNode *)batchNode {
-    if (batchNode_ != batchNode) {
-        
-        if (batchNode_) {
-            [batchNode_ removeSprite:self];
-        }
-        
-        batchNode_ = batchNode;
-        
-        [batchNode_ addSprite:self];
-    }
-}
 
 - (void)draw {
     
