@@ -308,7 +308,10 @@
     
     glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
 
+    glDisableVertexAttribArray(a_position);
+    glDisableVertexAttribArray(a_texCoord);
     
+    [REBuffer unbind];
         
 }
 
